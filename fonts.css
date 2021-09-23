@@ -1,0 +1,31 @@
+@font-face {
+  font-family: Comfortaa;
+  src: local('Comfortaa'),
+      url('fonts/Comfortaa-Regular.woff2') format('woff2'),
+      url('fonts/Comfortaa-Regular.woff') format('woff');
+      font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Helvetica Neue Cyr';
+  src: local('Helvetica Neue Cyr Light'), local('Helvetica-Neue-Cyr-Light'),
+      url('fonts/HelveticaNeueCyr-Light.woff2') format('woff2'),
+      url('fonts/HelveticaNeueCyr-Light.woff') format('woff');
+      font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Helvetica Neue Cyr';
+  src: local('Helvetica Neue Cyr Roman'), local('Helvetica-Neue-Cyr-Roman'),
+      url('fonts/HelveticaNeueCyr-Roman.woff2') format('woff2'),
+      url('fonts/HelveticaNeueCyr-Roman.woff') format('woff');
+      font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Helvetica Neue Cyr';
+  src: local('Helvetica Neue Cyr Medium'), local('Helvetica-Neue-Cyr-Medium'),
+      url('fonts/HelveticaNeueCyr-Medium.woff2') format('woff2'),
+      url('fonts/HelveticaNeueCyr-Medium.woff') format('woff');
+      font-weight: 500;
+}
