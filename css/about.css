@@ -1,7 +1,24 @@
 .about {
-  padding: 99px 0px 207px;
+  padding: 90px 0px 35px;
 }
 
 .about__container {
-  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  background: url('../image/about/pic.jpg') top right no-repeat;
+}
+
+.about__info {
+  margin-bottom: 30px;
+}
+
+.about__link {
+  align-self: flex-end;
+  font-family: HelveticaNeueCyr;
+  font-weight: 550;
+  font-size: 20px;
+  line-height: 26px;
+  color: #FF8A00;
+  padding-right: 45px;
+  background: url('../image/about/arrow.svg') center right no-repeat;
 }

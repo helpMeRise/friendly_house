@@ -34,23 +34,26 @@
   </header>
 
   <section class="section hero">
-    <div class="container">
+    <div class="container hero__container">
       <div class="hero__info">
-        <h2 class="hero__title">Сара ждёт, когда найдётся её человек</h2>
+        <h2 class="hero__title"><span class="hero__title_orange">Сара ждёт,</span> когда найдётся её человек</h2>
 
-        <button class="button hero__button">Жми на лапку, чтобы помочь!</button>
+        <button class="button hero__button">
+          <img src="image/paw.svg" alt="">
+          Жми на лапку, чтобы помочь!</button>
       </div>
+
       <ul class="hero__list">
-        <li class="hero__item">Борис</li>
-        <li class="hero__item">Луи</li>
-        <li class="hero__item">Питер</li>
-        <li class="hero__item">Кенни</li>
+        <li class="hero__item hero__item_boris">Борис</li>
+        <li class="hero__item hero__item_lui">Луи</li>
+        <li class="hero__item hero__item_piter">Питер</li>
+        <li class="hero__item hero__item_kenni">Кенни</li>
       </ul>
     </div>
   </section>
 
   <section class="section about">
-    <div class="container">
+    <div class="container about__container">
       <div class="about__info">
         <h2 class="section__title">О приюте</h2>
 
@@ -64,44 +67,46 @@
   </section>
 
   <section class="section help">
-    <div class="container">
+    <div class="container help__container">
 
       <h2 class="help__title">Как ты можешь нам помочь?</h2>
 
       <ul class="help__list">
-        <li class="help__item">
+        <li class="help__item help__item_money">
           <div class="help__money money">
             <h3 class="section__title money__title">Финансово</h3>
     
-            <p class="section__text">Мы будем рады любым пожертвованиям.
-              Деньги пойдут на корм, лечение и уход,
-              а также, на обустройство территории, где обитают наши маленькие питомцы.</p>
+            <p class="section__text help__text">Мы будем рады любым пожертвованиям. Деньги пойдут на корм, лечение и уход, а также, на обустройство территории, где обитают наши маленькие питомцы.</p>
           </div>
         </li>
 
-        <li class="help__item">
+        <li class="help__item help__item_volonteer">
           <div class="help__volunteer volunteer">
             <h3 class="section__title volunteer__title">Стать волонером</h3>
-            <p class="section__text">Наш приют "Friendly House" привлекает волонтеров для оказания помощи в самых разных форматах! От финансовой помощи и
-              набирающего популярность интеллектуального волонтерства до помощи руками. </p>
-            <p class="section__text">Нам всегда нужна помощь с выгулом подопечных, уборкой помещений, привезти в приют корм или медикаменты, помочь с
-              перевозкой животных в клиники, забрать и привезти вещи
-              и много всего другого. Мы всегда рады любой помощи, присоединяйтесь к нашей дружной команде! :)</p>
+            <div class="volonteer__text-wrap">
+              <p class="section__text volonteer__text">Наш приют "Friendly House" привлекает волонтеров для оказания помощи в самых разных форматах! От финансовой помощи и
+                набирающего популярность интеллектуального волонтерства до помощи руками. </p>
+              <p class="section__text volonteer__text">Нам всегда нужна помощь с выгулом подопечных, уборкой помещений, привезти в приют корм или медикаменты, помочь с
+                перевозкой животных в клиники, забрать и привезти вещи
+                и много всего другого. Мы всегда рады любой помощи, присоединяйтесь к нашей дружной команде! :)</p>
+            </div>
           </div>
         </li>
 
-        <li class="help__item">
+        <li class="help__item help__item_conservator">
           <div class="help__conservator conservator">
             <h3 class="section__title conservator__title">Стать опекуном</h3>
-            <p class="section__text section__text_bold">Хотите друга, но не можете взять домой?
+            <p class="section__text section__text_bold conservator__text">Хотите друга, но не можете взять домой?
               Проект опеки - идеальное решение!</p>
-            <p class="section__text">Взять под опеку животное, у которого еще нет опекуна, – это как завести питомца, о котором всю жизнь мечтал, но не
+            <p class="section__text conservator__text">Взять под опеку животное, у которого еще нет опекуна, – это как завести питомца, о котором всю жизнь мечтал, но не
               мог себе этого позволить
               по каким-либо причинам.</p>
           </div>
         </li>
       </ul>
-      <button class="button help__button">Жми на лапку, чтобы помочь!</button>
+      <button class="button help__button">
+        <img src="image/paw.svg" alt="">
+        Жми на лапку, чтобы помочь!</button>
     </div>
   </section>
 
@@ -133,7 +138,9 @@
             </div>
           </div>
 
-          <button type="submit" class="form__button">Отправить</button>
+          <button type="submit" class=" button form__button">
+            <img src="image/paw.svg" alt="">
+            Отправить</button>
   
         </form>
       </div>

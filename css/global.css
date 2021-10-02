@@ -25,6 +25,17 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+  transition: .2s;
+}
+
+a:hover {
+  text-shadow: 0 0 5px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .container {
@@ -60,22 +71,39 @@ a {
   margin-bottom: 20px;
 }
 
-.section {
-  padding-bottom: 180px;
-}
-
-
-
 .section__title {
   font-size: 30px;
   font-weight: 400;
   line-height: 40px;
 }
 
-
-
 .section__text_bold {
   font-family: "Helvetica Neue Cyr", sans-serif;
   font-weight: 500;
   line-height: 30px;
+}
+
+.button {
+  width: 80px;
+  height: 90px;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 550;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #FF8A00;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.button img {
+  transition: .2s;
+}
+
+.button:hover img,
+.button:active img {
+  filter: drop-shadow(0px 4px 6px);
 }

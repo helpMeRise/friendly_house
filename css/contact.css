@@ -1,5 +1,5 @@
 .contact {
-  padding: 167px 0;
+  padding: 90px 0;
   background-color: #fff;
 }
 
@@ -59,7 +59,7 @@
   top: 50%;
   left: 0;
   transform: translateY(-50%);
-  background: url('image/form/phone.svg') center / contain no-repeat;
+  background: url('../image/form/phone.svg') center / contain no-repeat;
 }
 
 .contact__email:before {
@@ -70,7 +70,7 @@
   top: 50%;
   left: -38px;
   transform: translateY(-50%);
-  background: url('image/form/envelope.svg') center / contain no-repeat;
+  background: url('../image/form/envelope.svg') center / contain no-repeat;
 }
 
 .form {
@@ -108,19 +108,19 @@
   height: 40px;
   border: none;
   padding-left: 15px;
+  outline: none;
+}
+
+.form__input:hover {
+  border: 1px inset #CBCBCB;
+}
+
+.form__input:active,
+.form__input:focus {
+  border: 1px inset #282626;
 }
 
 .form__button {
-  align-self: flex-end;
   width: 80px;
   height: 90px;
-  border: none;
-  padding-top: 70px;
-  background: url('image/form/paw.png') top no-repeat;
-  font-weight: 550;
-  font-size: 12px;
-  line-height: 16px;
-  text-transform: uppercase;
-  color: #FF8A00;
-  cursor: pointer;
 }

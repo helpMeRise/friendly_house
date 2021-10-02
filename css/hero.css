@@ -1,0 +1,71 @@
+.hero {
+  padding-top: 0;
+  padding-bottom: 90px;
+  background: #fff url('../image/hero/dog.png') top center no-repeat; 
+}
+
+.hero__container {
+  display: flex;
+}
+
+.hero__info {
+  margin-right: 500px;
+  margin-top: 137px;
+}
+
+.hero__title {
+  font-family: Comfortaa;
+  font-size: 40px;
+  line-height: 60px;
+  max-width: 400px;
+  font-weight: 300;
+  margin-bottom: 80px;
+}
+
+.hero__title_orange {
+  color: #FF8A00;
+  font-weight: normal;
+  font-size: 60px;
+}
+
+.hero__button {
+  width: 180px;
+  height: 155px;
+}
+
+.hero__list {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.hero__item {
+  height: 80px;
+  padding-left: 100px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.hero__item:hover {
+  border: 1px solid #FF8A00;
+}
+
+.hero__item:active {
+  border: 1px solid #FF8A00;
+  color: #FF8A00;
+}
+
+.hero__item_boris {
+  background: url('../image/hero/boris.png') no-repeat
+}
+.hero__item_lui {
+  background: url('../image/hero/lui.png') no-repeat
+}
+.hero__item_piter {
+  background: url('../image/hero/piter.png') no-repeat
+}
+.hero__item_kenni {
+  background: url('../image/hero/kenni.png') no-repeat
+}

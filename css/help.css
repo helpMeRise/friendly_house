@@ -1,29 +1,50 @@
+.help {
+  padding-bottom: 90px;
+}
+
+.help__container {
+  display: flex;
+  flex-direction: column;
+}
+
 .help__title {
   color: #ff8a00;
   font-family: Comfortaa, sans-serif;
   font-size: 50px;
   line-height: 60px;
   text-align: center;
-  margin-bottom: 130px;
+  margin-bottom: 50px;
 }
 
 .help__money {
   max-width: 377px;
   margin-bottom: 130px;
   padding-left: 102px;
+  padding-top: 50px;
 }
 
 .money__title {
   position: relative;
   margin-bottom: 36px;
+  font-family: HelveticaNeueCyr;
+  font-style: normal;
+  font-weight: 550;
+  font-size: 30px;
+  line-height: 40px;
 }
 
 .money__title:before {
   position: absolute;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   content: '1';
-  top: 0;
-  left: -58px;
+  top: -50%;
+  left: -100px;
+  width: 80px;
+  height: 80px;
+  background-color: #fff;
+  border-radius: 50%;
   color: #ff8a00;
   font-family: Comfortaa;
   font-size: 50px;
@@ -32,45 +53,115 @@
 
 .help__volunteer {
   max-width: 570px;
-  margin-bottom: 140px;
   padding-left: 102px;
 }
 
 .volunteer__title {
   position: relative;
-  margin-bottom: 80px;
+  margin-bottom: 50px;
+  font-family: HelveticaNeueCyr;
+  font-style: normal;
+  font-weight: 550;
+  font-size: 30px;
+  line-height: 40px;
 }
 
 .volunteer__title:before {
   position: absolute;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   content: '2';
-  top: 0;
-  left: -58px;
+  top: -50%;
+  left: -100px;
+  width: 80px;
+  height: 80px;
+  background-color: #fff;
+  border-radius: 50%;
   color: #ff8a00;
   font-family: Comfortaa;
   font-size: 50px;
   font-weight: 400;
+}
+
+.volonteer__text-wrap {
+  padding-left: 490px;
+  display: flex;
+  flex-direction: column;
+}
+
+.volonteer__text {
+  width: 580px;
+  max-width: 580px;
 }
 
 .help__conservator {
   max-width: 470px;
   padding-left: 102px;
+  padding-top: 50px;
 }
 
 .conservator__title {
   position: relative;
   margin-bottom: 30px;
+  font-family: HelveticaNeueCyr;
+  font-style: normal;
+  font-weight: 550;
+  font-size: 30px;
+  line-height: 40px;
 }
 
 .conservator__title:before {
   position: absolute;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   content: '3';
-  top: 0;
-  left: -58px;
+  top: -50%;
+  left: -100px;
+  width: 80px;
+  height: 80px;
+  background-color: #fff;
+  border-radius: 50%;
   color: #ff8a00;
   font-family: Comfortaa;
   font-size: 50px;
   font-weight: 400;
+}
+
+.conservator__text {
+  max-width: 480px;
+  width: 470px;
+}
+
+.help__text {
+  width: 380px;
+}
+
+.help__item_money {
+  height: 380px;
+  background: 
+    url('../image/help/rabbit.jpg') top right 400px no-repeat,
+    url('../image/help/dog1.jpg') top 160px right 400px no-repeat,
+    url('../image/help/dog2.jpg') top right no-repeat;
+}
+
+.help__item_volonteer {
+  background: url('../image/help/girl_with_dog.jpg') top 90px left no-repeat;
+  margin-bottom: 50px;
+}
+
+.help__item_conservator {
+  height: 380px;
+  background: 
+    url('../image/help/cat.jpg') top right 300px no-repeat,
+    url('../image/help/cat_and_hand.jpg') top right no-repeat,
+    url('../image/help/man_with_dog.jpg') top 200px right no-repeat;
+  margin-bottom: 50px;
+}
+
+.help__button {
+  width: 180px;
+  height: 155px;
+  align-self: flex-end;
 }
