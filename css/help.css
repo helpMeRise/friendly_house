@@ -84,13 +84,13 @@
   font-weight: 400;
 }
 
-.volonteer__text-wrap {
+.volunteer__text-wrap {
   padding-left: 490px;
   display: flex;
   flex-direction: column;
 }
 
-.volonteer__text {
+.volunteer__text {
   width: 580px;
   max-width: 580px;
 }
@@ -146,7 +146,7 @@
     url('../image/help/dog2.jpg') top right no-repeat;
 }
 
-.help__item_volonteer {
+.help__item_volunteer {
   background: url('../image/help/girl_with_dog.jpg') top 90px left no-repeat;
   margin-bottom: 50px;
 }
