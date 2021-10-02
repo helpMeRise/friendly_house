@@ -15,15 +15,46 @@
   <link rel="preload" href="fonts/HelveticaNeueCyr-Medium.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/HelveticaNeueCyr-Medium.woff" as="font" type="font/woff" crossorigin>
 
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
   <title>Friendly house</title>
 </head>
 
 <body>
 
+  <header class="header">
+    <div class="container">
+      <div class="header__menu">
+        <span class="header__line"></span>
+      </div>
+
+      <div class="header__text">
+        <h1 class="header__title">Friendly House</h1>
+        <p class="header__subtitle">приют для животных</p>
+      </div>
+
+      <a href="tel:88493003957" class="header__phone">8 (849) 300 - 39 -57</a>
+    </div>
+  </header>
+
+  <section class="section hero">
+    <div class="container">
+      <div class="hero__info">
+        <h2 class="hero__title">Сара ждёт, когда найдётся её человек</h2>
+
+        <button class="button hero__button">Жми на лапку, чтобы помочь!</button>
+      </div>
+      <ul class="hero__list">
+        <li class="hero__item">Борис</li>
+        <li class="hero__item">Луи</li>
+        <li class="hero__item">Питер</li>
+        <li class="hero__item">Кенни</li>
+      </ul>
+    </div>
+  </section>
+
   <section class="section about">
     <div class="container">
-      <div class="about__container">
+      <div class="about__info">
         <h2 class="section__title">О приюте</h2>
 
         <p class="section__text section__text">Приют "Friendly House" - это целый комплекс
@@ -31,42 +62,50 @@
         <p class="section__text section__text section__text_wide">В приюте работает сплочённая команда, которая занимается помощью бездомным животным
           в течении многих лет. Мы заботимся о качестве жизни наших подопечных и осуществляем профессиональный медицинский уход.</p>
       </div>
+      <a href="#" class="about__link">СМИ о нас</a>
     </div>
   </section>
 
   <section class="section help">
     <div class="container">
 
-      <h1 class="help__title">Как ты можешь нам помочь?</h1>
+      <h2 class="help__title">Как ты можешь нам помочь?</h2>
 
-      <div class="help__money money">
-        <h2 class="section__title money__title">Финансово</h2>
+      <ul class="help__list">
+        <li class="help__item">
+          <div class="help__money money">
+            <h3 class="section__title money__title">Финансово</h3>
+    
+            <p class="section__text">Мы будем рады любым пожертвованиям.
+              Деньги пойдут на корм, лечение и уход,
+              а также, на обустройство территории, где обитают наши маленькие питомцы.</p>
+          </div>
+        </li>
 
-        <p class="section__text">Мы будем рады любым пожертвованиям.
-          Деньги пойдут на корм, лечение и уход,
-          а также, на обустройство территории, где обитают наши маленькие питомцы.</p>
-      </div>
+        <li class="help__item">
+          <div class="help__volunteer volunteer">
+            <h3 class="section__title volunteer__title">Стать волонером</h3>
+            <p class="section__text">Наш приют "Friendly House" привлекает волонтеров для оказания помощи в самых разных форматах! От финансовой помощи и
+              набирающего популярность интеллектуального волонтерства до помощи руками. </p>
+            <p class="section__text">Нам всегда нужна помощь с выгулом подопечных, уборкой помещений, привезти в приют корм или медикаменты, помочь с
+              перевозкой животных в клиники, забрать и привезти вещи
+              и много всего другого. Мы всегда рады любой помощи, присоединяйтесь к нашей дружной команде! :)</p>
+          </div>
+        </li>
 
-      <div class="help__volunteer volunteer">
-        <h2 class="section__title volunteer__title">Стать волонером</h2>
-        <p class="section__text">Наш приют "Friendly House" привлекает волонтеров для оказания помощи в самых разных форматах! От финансовой помощи и
-          набирающего популярность интеллектуального волонтерства до помощи руками. </p>
-        <p class="section__text">Нам всегда нужна помощь с выгулом подопечных, уборкой помещений, привезти в приют корм или медикаменты, помочь с
-          перевозкой животных в клиники, забрать и привезти вещи
-          и много всего другого. Мы всегда рады любой помощи, присоединяйтесь к нашей дружной команде! :)</p>
-      </div>
-
-      <div class="help__conservator conservator">
-        <h2 class="section__title conservator__title">Стать опекуном</h2>
-        <p class="section__text section__text_bold">Хотите друга, но не можете взять домой?
-          Проект опеки - идеальное решение!</p>
-        <p class="section__text">Взять под опеку животное, у которого еще нет опекуна, – это как завести питомца, о котором всю жизнь мечтал, но не
-          мог себе этого позволить
-          по каким-либо причинам.</p>
-      </div>
-
+        <li class="help__item">
+          <div class="help__conservator conservator">
+            <h3 class="section__title conservator__title">Стать опекуном</h3>
+            <p class="section__text section__text_bold">Хотите друга, но не можете взять домой?
+              Проект опеки - идеальное решение!</p>
+            <p class="section__text">Взять под опеку животное, у которого еще нет опекуна, – это как завести питомца, о котором всю жизнь мечтал, но не
+              мог себе этого позволить
+              по каким-либо причинам.</p>
+          </div>
+        </li>
+      </ul>
+      <button class="button help__button">Жми на лапку, чтобы помочь!</button>
     </div>
-
   </section>
 
   <section class="section contact">
