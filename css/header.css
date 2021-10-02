@@ -1,0 +1,68 @@
+.header {
+  padding-top: 25px;
+  padding-bottom: 27px;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__menu {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 21px;
+  cursor: pointer;
+  margin-right: 150px;
+}
+
+.header__line {
+  height: 3px;
+  width: 40px;
+  background: #282626;
+  border-radius: 1px;
+}
+
+.header__line:before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 3px;
+  top: 0;
+  left: 0;
+  background: #282626;
+  border-radius: 1px;
+}
+
+.header__line:after {
+  position: absolute;
+  content: '';
+  width: 29px;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background: #282626;
+  border-radius: 1px;
+}
+
+.header__phone {
+  position: relative;
+  font-weight: 550;
+  font-size: 20px;
+  line-height: 30px;
+  padding-left: 35px;
+}
+
+.header__phone:before {
+  position: absolute;
+  content: '';
+  width: 18px;
+  height: 18px;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background: url('../image/header/phone.svg')
+}
