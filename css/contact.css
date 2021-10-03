@@ -123,6 +123,9 @@
 .form__button {
   width: 80px;
   height: 90px;
+  font-weight: 550;
+  font-size: 12px;
+  line-height: 16px;
   align-self: flex-end;
 }
 
