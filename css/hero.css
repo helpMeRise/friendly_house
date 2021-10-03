@@ -1,7 +1,7 @@
 .hero {
   padding-top: 0;
   padding-bottom: 90px;
-  background: #fff url('../image/hero/dog.png') top center no-repeat; 
+  background-color: #fff;
 }
 
 .hero__container {
@@ -9,8 +9,11 @@
 }
 
 .hero__info {
-  margin-right: 500px;
-  margin-top: 137px;
+  padding-top: 137px;
+}
+
+.hero__image {
+  margin-right: 160px;
 }
 
 .hero__title {
@@ -34,7 +37,7 @@
 }
 
 .hero__list {
-  margin-top: 100px;
+  padding-top: 100px;
   display: flex;
   flex-direction: column;
   gap: 30px;

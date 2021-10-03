@@ -123,4 +123,10 @@
 .form__button {
   width: 80px;
   height: 90px;
+  align-self: flex-end;
+}
+
+.form__button img {
+  width: 73px;
+  margin-bottom: 5px;
 }
