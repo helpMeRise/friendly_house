@@ -5,22 +5,29 @@
 }
 
 .hero__container {
+  position: relative;
   display: flex;
 }
 
 .hero__info {
+  z-index: 2;
+  position: relative;
   padding-top: 137px;
+  width: 480px;
+  margin-right: 420px;
 }
 
 .hero__image {
-  margin-right: 160px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .hero__title {
   font-family: Comfortaa;
   font-size: 40px;
   line-height: 60px;
-  max-width: 400px;
+  max-width: 440px;
   font-weight: 300;
   margin-bottom: 80px;
 }
@@ -60,6 +67,9 @@
   color: #FF8A00;
 }
 
+.hero__item_sara {
+  background: url('../image/hero/sara.png') no-repeat
+}
 .hero__item_boris {
   background: url('../image/hero/boris.png') no-repeat
 }
@@ -71,4 +81,8 @@
 }
 .hero__item_kenni {
   background: url('../image/hero/kenni.png') no-repeat
+}
+
+.hero__item_show {
+  display: none;
 }

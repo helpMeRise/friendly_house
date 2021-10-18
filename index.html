@@ -16,6 +16,7 @@
   <link rel="preload" href="fonts/HelveticaNeueCyr-Medium.woff" as="font" type="font/woff" crossorigin>
 
   <link rel="stylesheet" href="css/style.css">
+  <script type="module" src="js/index.js"></script>
   <title>Friendly house</title>
 </head>
 
@@ -36,16 +37,17 @@
   <section class="section hero">
     <div class="container hero__container">
       <div class="hero__info">
-        <h2 class="hero__title"><span class="hero__title hero__title_orange">Сара ждёт,</span> когда найдётся её человек</h2>
+        <h2 class="hero__title"><span class="hero__title hero__title_orange"><span class="hero__animal-name">Сара</span> ждёт,</span> когда найдётся <span class="hero__who">её</span> человек</h2>
 
         <button class="button hero__button">
           <img src="image/paw.svg" alt="">
           Жми на лапку, чтобы помочь!</button>
       </div>
 
-      <img src="image/hero/dog.png" alt="" class="hero__image">
+      <img src="image/hero/sara_big.png" alt="" class="hero__image">
 
       <ul class="hero__list">
+        <li class="hero__item hero__item_sara hero__item_show">Сара</li>
         <li class="hero__item hero__item_boris">Борис</li>
         <li class="hero__item hero__item_lui">Луи</li>
         <li class="hero__item hero__item_piter">Питер</li>
@@ -142,7 +144,8 @@
 
           <button type="submit" class=" button form__button">
             <img src="image/paw.svg" alt="">
-            Отправить</button>
+            Отправить
+          </button>
   
         </form>
       </div>
