@@ -172,6 +172,44 @@
     </div>
   </section>
 
+  <div class="modal">
+    <div class="container">
+      <div class="contact__container modal__container">
+        <h2 class="section__title modal__title contact__title">Ты можешь помочь нам!</h2>
+
+        <p class="section__text modal__text contact__text">Хочешь забрать питомца, стать волонтером, или опекуном?</p>
+        <p class="section__text modal__text contact__text contact__text_orange"> Свяжись с нами!</p>
+        <div class="modal__contacts contact__contacts">
+          <a href="tel:88493003957" class="modal__link contact__link contact__phone">8 (849) 300 - 39 -57</a>
+          <a href="mailto:FriendlyHouse@gmail.com" class="modal__link contact__link contact__email">FriendlyHouse@gmail.com</a>
+        </div>
+
+
+        <form action="https://jsonplaceholder.typicode.com/posts" method="POST" class="contact__form modal__form" target="_blank">
+          <p class="section__text form__text">Или оставь свои контакты и мы сами свяжемся с тобой!</p>
+
+          <div class="form__inputs">
+            <div class="form__wrap form__wrap_phone">
+              <label for="phone" class=" form__label form__phone">Номер телефона</label>
+              <input type="tel" class="form__input form__input_phone" name="phone" id="phoneModal" required>
+            </div>
+
+            <div class="form__wrap">
+              <label for="email" class=" form__label form__email">E-mail</label>
+              <input type="email" class="form__input form__input_email" name="email" id="emailModal" required>
+            </div>
+          </div>
+
+          <button type="submit" class=" button form__button">
+            <img src="image/paw.svg" alt="">
+            Отправить
+          </button>
+  
+        </form>
+      </div>
+    </div>
+  </div>
+
 </body>
 
 </html>
