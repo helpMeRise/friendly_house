@@ -107,3 +107,14 @@ ul {
 .button:active img {
   filter: drop-shadow(0px 4px 6px);
 }
+
+.link {
+  align-self: flex-end;
+  font-family: HelveticaNeueCyr;
+  font-weight: 550;
+  font-size: 20px;
+  line-height: 26px;
+  color: #FF8A00;
+  padding-right: 45px;
+  background: url('../image/about/arrow.svg') center right no-repeat;
+}
