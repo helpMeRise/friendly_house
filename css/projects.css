@@ -1,0 +1,145 @@
+.projects {
+  background-color: #fff;
+}
+
+.projects__container {
+  display: grid;
+  justify-content: space-between;
+  grid-template-areas: 
+  "title info"
+  "list info";
+}
+
+.projects__title {
+  grid-area: title;
+}
+
+.projects__list {
+  display: grid;
+  grid-area: list;
+  gap: 30px;
+}
+
+.projects__item {
+  display: grid;
+  max-width: 680px;
+  gap: 20px;
+  grid-template-areas: 
+  "image ifo";
+}
+
+.projects__item_info {
+  display: flex;
+  flex-direction: column;
+}
+
+.projects__item_title {
+  font-weight: 550;
+  font-size: 30px;
+  line-height: 40px;
+  margin-bottom: 15px;
+}
+
+.projects__item_text {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 22px;
+}
+
+.projects__item_link {
+  align-self: flex-start;
+}
+
+.projects__info {
+  display: grid;
+  max-width: 380px;
+  grid-area: info;
+  justify-content: flex-end;
+  gap: 52px;
+}
+
+.projects__article {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  width: 380px;
+  height: 538px;
+  padding: 10px 10px 40px;
+  background: url('../image/projects/best_friend.jpg') top 90px left 0 / contain no-repeat;
+}
+
+.article__link {
+  position: absolute;
+  top: 20px;
+  right: 0;
+}
+
+.article__text {
+  font-weight: 550;
+  font-size: 30px;
+  line-height: 40px;
+  color: #FFFFFF;
+}
+
+.projects__more {
+  display: grid;
+  gap: 20px;
+  grid-template-areas: 
+  "more__title more__title more__title more__title"
+  "first second third fourth"
+  "fifth sixth seventh eighth"
+  "nineth tenth eleventh twelfth";
+}
+
+.projects__info_text {
+  grid-area: more__title;
+}
+
+.projects__info_project:first-child {
+  grid-area: first;
+}
+
+.projects__info_project:nth-child(2) {
+  grid-area: second;
+}
+
+.projects__info_project:nth-child(3) {
+  grid-area: third;
+}
+
+.projects__info_project:nth-child(4) {
+  grid-area: fourth;
+}
+
+.projects__info_project:nth-child(5) {
+  grid-area: fifth;
+}
+
+.projects__info_project:nth-child(6) {
+  grid-area: sixth;
+}
+
+.projects__info_project:nth-child(7) {
+  grid-area: seventh;
+}
+
+.projects__info_project:nth-child(8) {
+  grid-area: eighth;
+}
+
+.projects__info_project:nth-child(9) {
+  grid-area: nineth;
+}
+
+.projects__info_project:nth-child(10) {
+  grid-area: tenth;
+}
+
+.projects__info_project:nth-child(11) {
+  grid-area: eleventh;
+}
+
+.projects__info_project:nth-child(12) {
+  grid-area: twelfth;
+}
