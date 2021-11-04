@@ -39,7 +39,8 @@ ul {
 }
 
 .container {
-  max-width: 1180px;
+  max-width: 1300px;
+  padding: 0px 60px;
   margin: 0 auto;
 }
 
@@ -117,4 +118,22 @@ ul {
   color: #FF8A00;
   padding-right: 45px;
   background: url('../image/about/arrow.svg') center right no-repeat;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    padding: 0px 35px;
+  }
+}
+
+@media (max-width: 769px) {
+  .container {
+    padding: 0px 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0px 25px;
+  }
 }

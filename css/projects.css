@@ -7,7 +7,7 @@
   display: grid;
   justify-content: space-between;
   grid-template-areas: 
-  "title info"
+  "title title"
   "list info";
 }
 
@@ -65,15 +65,15 @@
   display: flex;
   align-items: flex-end;
   width: 380px;
-  height: 538px;
+  height: 450px;
   padding: 10px 10px 40px;
-  background: url('../image/projects/best_friend.jpg') top 90px left 0 / contain no-repeat;
+  background: url('../image/projects/best_friend.jpg')  no-repeat;
 }
 
 .article__link {
   position: absolute;
-  top: 20px;
-  right: 0;
+  bottom: 15px;
+  right: 10px;
 }
 
 .article__text {

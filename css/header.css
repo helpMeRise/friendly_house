@@ -72,3 +72,23 @@
   transform: translateY(-50%);
   background: url('../image/header/phone.svg')
 }
+
+@media (max-width: 900px) {
+  .logo {
+    max-width: 300px;
+  }
+
+  .header__menu {
+    margin-right: 0;
+  }
+
+  .header__phone {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    max-width: 150px;
+  }
+}
