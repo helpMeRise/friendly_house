@@ -1,0 +1,51 @@
+.pets {
+  padding-top: 90px;
+  padding-bottom: 45px;
+  background-color: #fff;
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(59, 20px);
+    grid-template-rows: repeat(2, 326px);
+    row-gap: 44px;
+  }
+  &__item {
+    &_cavias {
+      grid-column: 1 / 25;
+      grid-row: 1;
+    }
+    &_mursik {
+      grid-column: 26 / 39;
+      grid-row: 1;
+    }
+    &_friends {
+      grid-column: 41 / 60;
+      grid-row: span 2;
+    }
+    &_jeck {
+      grid-column: 1 / 15;
+      grid-row: 2;
+    }
+    &_jerry {
+      grid-column: 16 / 30;
+      grid-row: 2;
+    }
+    &_parrots {
+      grid-column: 31 / 40;
+      grid-row: 2;
+    }
+  }
+  &__parrots {
+    &_wrap {
+      display: flex;
+      flex-direction: column;
+      & img:first-child {
+        margin-bottom: 0;
+      }
+    }
+    
+  }
+  &__image {
+    margin-bottom: 20px;
+  }
+}
+

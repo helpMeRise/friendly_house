@@ -20,18 +20,19 @@ export const html = () => gulp
 export const style = () => {
   if (prepros) {
     return gulp
-    .src('./src/scss/**.*.scss')
-    .pipe(sass().on('error', sass.logError))
-    .pipe(browserSync.stream())
+      .src('./src/scss/**/*.scss')
+      .pipe(sass().on('error', sass.logError))
+      .pipe(gulp.dest('dist/css'))
+      .pipe(browserSync.stream())
   }
 
   return gulp
-  .src('src/css/index.css')
-  .pipe(gulpCssimport({
-    extensions: ['css'],
-  }))
-  .pipe(gulp.dest('dist/css'))
-  .pipe(browserSync.stream());
+    .src('src/css/index.css')
+    .pipe(gulpCssimport({
+      extensions: ['css'],
+    }))
+    .pipe(gulp.dest('dist/css'))
+    .pipe(browserSync.stream());
 }
 
 export const js = () => gulp
