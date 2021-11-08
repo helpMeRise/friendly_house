@@ -15,7 +15,18 @@
   <link rel="preload" href="fonts/HelveticaNeueCyr-Medium.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/HelveticaNeueCyr-Medium.woff" as="font" type="font/woff" crossorigin>
 
-  <link rel="stylesheet" href="css/index.css">
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const createLink = (url) => {
+        const link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.href = url;
+        document.head.append(link);
+      }
+      createLink('css/index.css');
+    })
+  </script>
+
   <script type="module" src="js/index.min.js"></script>
   <title>Friendly house</title>
 </head>
@@ -46,7 +57,7 @@
           </li>
         </ul>
       </nav>
-
+      
       <img src="image/header/logo.svg" alt="Логотип" class="logo">
 
       <a href="tel:88493003957" class="header__phone">8 (849) 300 - 39 -57</a>
@@ -65,7 +76,7 @@
       </div>
 
       <img src="image/hero/sara_big.png" alt="" class="hero__image">
-
+      
       <ul class="hero__list">
         <li class="hero__item hero__item_sara hero__item_show">Сара</li>
         <li class="hero__item hero__item_boris">Борис</li>
