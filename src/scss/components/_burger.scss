@@ -50,3 +50,41 @@
   left: 20px;
 }
 
+
+@media (max-width: 900px) {
+  .burger {
+    width: 349px;
+    height: 388px;
+    &__list {
+      padding-top: 40px;
+      font-size: 18px;
+      line-height: 24px;
+    }
+    &__item:not(:last-child):after {
+      width: 309px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .burger {
+    top: 80px;
+    width: 270px;
+    height: 326px;
+    &__list {
+      padding-top: 20px;
+      font-size: 14px;
+      line-height: 20px;
+      &:before {
+        display: none;
+      }
+    }
+    &__item {
+      padding-left: 10px;
+      &:not(:last-child):after {
+        width: 100%;
+        left: 0;
+      }
+    }
+  }
+}

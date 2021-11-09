@@ -73,6 +73,10 @@
   background: url('../image/header/phone.svg')
 }
 
+.header__phone_mob {
+  display: none;
+}
+
 @media (max-width: 900px) {
   .logo {
     max-width: 300px;
@@ -84,11 +88,29 @@
 
   .header__phone {
     display: none;
+    &_mob {
+      display: block;
+      padding-left: 73px;
+      &:before {
+        left: 42px;
+      }
+    }
   }
 }
 
 @media (max-width: 480px) {
   .logo {
     max-width: 150px;
+  }
+  .header__phone_mob {
+    display: block;
+    padding-left: 41px;
+    font-size: 14px;
+    line-height: 20px;
+    &:before {
+      width: 18px;
+      height: 18px;
+      left: 13px;
+    }
   }
 }
