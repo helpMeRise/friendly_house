@@ -104,13 +104,20 @@
     </div>
   </section>
 
-  <!-- <section class="section projects">
+  <section class="section projects">
     <div class="container projects__container">
         <h2 class="section__title projects__title">Наши проекты</h2>
 
         <ul class="projects__list">
           <li class="projects__item">
-            <img src="image/projects/new_house.jpg" alt="" class="projects__image">
+            <picture>
+              <source media="(max-width: 480px)" srcset="image/projects/new_house_mob.avif" type="image/avif">
+              <source media="(max-width: 480px)" srcset="image/projects/new_house_mob.webp" type="image/webp">
+              <source media="(max-width: 480px)" srcset="image/projects/new_house_mob.webp" type="image/jpg">
+              <source srcset="image/projects/new_house.avif" type="image/avif">
+              <source srcset="image/projects/new_house.webp" type="image/webp">
+              <img src="image/projects/new_house.jpg" alt="" class="projects__image">
+            </picture>
             <div class="projects__item_info">
               <h3 class="projects__item_title">Новый дом для животных</h3>
               <p class="projects__item_text">Приют появился практически одновременно с созданием Фонда в ...</p>
@@ -119,7 +126,14 @@
 
           </li>
           <li class="projects__item">
-            <img src="image/projects/little_mod.jpg" alt="" class="projects__image">
+            <picture>
+              <source media="(max-width: 480px)" srcset="image/projects/little_mod_mob.avif" type="image/avif">
+              <source media="(max-width: 480px)" srcset="image/projects/little_mod_mob.webp" type="image/webp">
+              <source media="(max-width: 480px)" srcset="image/projects/little_mod_mob.webp" type="image/jpg">
+              <source srcset="image/projects/little_mod.avif" type="image/avif">
+              <source srcset="image/projects/little_mod.webp" type="image/webp">
+              <img src="image/projects/new_house.jpg" alt="" class="projects__image">
+            </picture>
             <div class="projects__item_info">
               <h3 class="projects__item_title">Маленькие модники</h3>
               <p class="projects__item_text">Наши котики и собачки тоже любят наряжаться, чтобы красиво выглядеть ... </p>
@@ -128,7 +142,14 @@
 
           </li>
           <li class="projects__item">
-            <img src="image/projects/play.jpg" alt="" class="projects__image">
+            <picture>
+              <source media="(max-width: 480px)" srcset="image/projects/play_mob.avif" type="image/avif">
+              <source media="(max-width: 480px)" srcset="image/projects/play_mob.webp" type="image/webp">
+              <source media="(max-width: 480px)" srcset="image/projects/play_mob.webp" type="image/jpg">
+              <source srcset="image/projects/play.avif" type="image/avif">
+              <source srcset="image/projects/play.webp" type="image/webp">
+              <img src="image/projects/new_house.jpg" alt="" class="projects__image">
+            </picture>
             <div class="projects__item_info">
               <h3 class="projects__item_title">Поиграй со мной!</h3>
               <p class="projects__item_text">Новая программа нашего приюта “Поиграй со мной”. Приводите своих ...</p>
@@ -137,7 +158,14 @@
 
           </li>
           <li class="projects__item">
-            <img src="image/projects/best_photo.jpg" alt="" class="projects__image">
+            <picture>
+              <source media="(max-width: 480px)" srcset="image/projects/best_photo_mob.avif" type="image/avif">
+              <source media="(max-width: 480px)" srcset="image/projects/best_photo_mob.webp" type="image/webp">
+              <source media="(max-width: 480px)" srcset="image/projects/best_photo_mob.webp" type="image/jpg">
+              <source srcset="image/projects/best_photo.avif" type="image/avif">
+              <source srcset="image/projects/best_photo.webp" type="image/webp">
+              <img src="image/projects/new_house.jpg" alt="" class="projects__image">
+            </picture>
             <div class="projects__item_info">
               <h3 class="projects__item_title">Конкурс “Лучшее фото”</h3>
               <p class="projects__item_text">Приходи к нам в Friendly House и делай классные фотографии наших животн...</p>
@@ -202,12 +230,14 @@
             <a href="#" class="projects__info_project">
               <img src="image/projects/12.jpg" alt="" class="projects__info_pic">
             </a>
+
+            <a href="" class=" link projects__info_link">Увидеть все</a>
           </div>
         </div>
     </div>
   </section>
 
-  <section class="section help" id="help">
+  <!-- <section class="section help" id="help">
     <div class="container help__container">
 
       <h2 class="help__title">Как ты можешь нам помочь?</h2>
@@ -333,7 +363,7 @@
         </form>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <div class="modal">
     <div class="container">
@@ -371,7 +401,7 @@
         </form>
       </div>
     </div>
-  </div> -->
+  </div>
 
 </body>
 
