@@ -27,12 +27,14 @@
   line-height: 30px;
   max-width: 100%;
   margin-bottom: 0;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .contact__text_orange {
   font-weight: 550;
   color: #FF8A00;
-  margin-bottom: 20px;
+  
 }
 
 .contact__contacts {
@@ -148,10 +150,6 @@
       font-size: 14px;
       line-height: 20px;
       text-align: center;
-      display: inline-block;
-    }
-    &_orange {
-      display: inline-block;
     }
     &__contacts {
       min-width: 400px;
