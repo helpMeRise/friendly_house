@@ -206,3 +206,348 @@
   height: 155px;
   align-self: center;
 }
+
+@media (max-width: 1280px) {
+  .help {
+    padding: 70px 0;
+    &__title {
+      font-size: 44px;
+      line-height: 54px;
+      margin-bottom: 40px;
+    }
+    &__text {
+      font-size: 18px;
+      line-height: 26px;
+      max-width: 330px;
+    }
+    &__volunteer {
+      max-width: 480px;
+      &_pics {
+        max-width: 400px;
+        height: 349px;
+        .help__item_pic {
+          width: 100%;
+          height: 349px;
+          overflow: hidden;
+        }
+      }
+    }
+    &__conservator {
+      &_pics {
+        padding-top: 100px;
+        gap: 12px 20px;
+        .help__item_pic:nth-child(1) {
+          max-width: 180px;
+          height: 244px;
+          overflow: hidden;
+          img {
+            max-width: 100%;
+          }
+        }
+        .help__item_pic:nth-child(2),
+        .help__item_pic:nth-child(3) {
+          max-width: 180px;
+          height: 117px;
+          img {
+            max-width: 100%;
+          }
+        }
+      }
+    }
+    &__money_pics {
+      .help__item_pic {
+        &:nth-child(3) {
+          overflow: hidden;
+          max-width: 280px;
+        }
+      }
+    }
+  }
+  .money__title,
+  .volunteer__title,
+  .conservator__title {
+    font-size: 44px;
+    line-height: 54px;
+    margin-bottom: 30px;
+    &:before {
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+  .volunteer {
+    &__text {
+      width: 480px;
+      font-size: 18px;
+      line-height: 26px;
+    }
+  }
+  .conservator {
+    &__text {
+      width: 380px;
+      font-size: 18px;
+      line-height: 26px;
+      &_bold {
+        max-width: 280px;
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .help {
+    padding: 60px 0;
+    &__title {
+      font-size: 30px;
+      line-height: 34px;
+      margin-bottom: 30px;
+    }
+    &__item {
+      &_volunteer {
+        max-height: unset;
+        margin-bottom: 70px;
+      }
+      &_money {
+        flex-direction: column;
+      }
+      &_conservator {
+        flex-direction: column;
+      }
+    }
+    &__money {
+      width: 100%;
+      max-width: 620px;
+      padding-left: 0;
+      padding-top: 0;
+      margin-bottom: 30px;
+    }
+    &__volunteer {
+      padding-left: 80px;
+      max-width: unset;
+      width: 100%;
+      &_wrap {
+        flex-direction: column;
+      }
+      &_pics {
+        width: 100%;
+        max-width: unset;
+        height: auto;
+        .help__item_pic {
+          height: auto;
+        }
+      }
+    }
+    &__conservator {
+      padding-left: 0;
+      padding-top: 0;
+      &_pics {
+        padding-top: 0;
+        gap: 20px;
+        max-width: 700px;
+        .help__item_pic:nth-child(1) {
+          max-width: 300px;
+          height: unset;
+        }
+        .help__item_pic:nth-child(2),
+        .help__item_pic:nth-child(3) {
+          max-width: 380px;
+          height: auto;
+        }
+      }
+    }
+    &__text {
+      width: 100%;
+      max-width: 100%;
+      font-size: 14px;
+      line-height: 20px;
+    }
+    &__money_pics {
+      gap: 20px;
+      max-width: 700px;
+      .help__item_pic {
+        &:nth-child(1) {
+          max-width: 300px;
+        }
+        &:nth-child(2) {
+          max-width: 300px;
+        }
+        &:nth-child(3) {
+          max-width: 380px;
+          img {
+            height: 391px;
+          }
+        }
+      }
+    }
+    &__button {
+      height: 126px;
+      font-size: 12px;
+      line-height: 18px;
+      img {
+        max-width: 75px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+  .money__title,
+  .volunteer__title,
+  .conservator__title {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 30px;
+    padding-left: 80px;
+    &:before {
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      width: 60px;
+      height: 60px;
+      font-size: 34px;
+    }
+  }
+  .volunteer {
+    &__text {
+      width: 100%;
+      max-width: 620px;
+      font-size: 14px;
+      line-height: 20px;
+      &:first-child {
+        padding-top: 0;
+      }
+    }
+  }
+  .conservator {
+    width: 100%;
+    max-width: unset;
+    margin-bottom: 30px;
+    &__text {
+      font-size: 14px;
+      line-height: 20px;
+      max-width: 620px;
+      width: 100%;
+      &_bold {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .help {
+    padding: 30px 0;
+    &__container {
+      position: relative;
+      overflow: hidden;
+    }
+    &__title {
+      font-size: 20px;
+      line-height: 24px;
+      max-width: 270px;
+      align-self: center;
+      margin-bottom: 20px;
+    }
+    &__item {
+      &_volunteer {
+        margin-bottom: 40px;
+      }
+      &_money {
+        margin-bottom: 40px;
+      }
+    }
+    &__money {
+      width: 100%;
+      max-width: 620px;
+      padding-left: 0;
+      padding-top: 0;
+      margin-bottom: 30px;
+    }
+    &__volunteer {
+      padding-left: 50px;
+      &_pics {
+        width: 270px;
+        margin: 0 auto;
+      }
+    }
+    &__conservator {
+      padding-left: 0;
+      padding-top: 0;
+      &_pics {
+        display: flex;
+        overflow-x: auto;
+        gap: 10px;
+        .help__item_pic {
+          height: 160px;
+          &:nth-child(1) {
+            height: 160px;
+            overflow: unset;
+            img {
+              max-width: unset;
+            }
+          }
+          &:nth-child(2) {
+            height: 160px;
+            overflow: unset;
+            img {
+              max-width: unset;
+            }
+          }
+          &:nth-child(3) {
+            height: 160px;
+            overflow: unset;
+            img {
+              max-width: unset;
+            }
+          }
+        }
+      }
+    }
+    &__text {
+      padding-left: 50px;
+    }
+    &__money_pics {
+      display: flex;
+      gap: 10px;
+      overflow-x: auto;
+      .help__item_pic {
+        height: 131px;
+        &:nth-child(3) {
+          overflow: unset;
+          img {
+            height: unset;
+          }
+        }
+      }
+    }
+    &__button {
+      height: 126px;
+      font-size: 12px;
+      line-height: 18px;
+      img {
+        max-width: 75px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+  .money__title,
+  .volunteer__title,
+  .conservator__title {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 10px;
+    padding-left: 50px;
+    &:before {
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      width: 38px;
+      height: 38px;
+      font-size: 24px;
+    }
+  }
+  .conservator {
+    margin-bottom: 20px;
+    &__text {
+      padding-left: 50px;
+    }
+  }
+}
