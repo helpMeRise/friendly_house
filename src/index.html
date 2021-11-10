@@ -15,6 +15,9 @@
   <link rel="preload" href="fonts/HelveticaNeueCyr-Medium.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/HelveticaNeueCyr-Medium.woff" as="font" type="font/woff" crossorigin>
 
+  <link rel="icon" type="image/svg+xml" href="image/favicon.svg">
+  <link rel="icon" type="image/png" href="image/favicon.png">
+
   <script>
     document.addEventListener('DOMContentLoaded', () => {
       const createLink = (url) => {
@@ -237,7 +240,7 @@
     </div>
   </section>
 
-  <!-- <section class="section help" id="help">
+  <section class="section help" id="help">
     <div class="container help__container">
 
       <h2 class="help__title">Как ты можешь нам помочь?</h2>
@@ -249,17 +252,33 @@
     
             <p class="section__text help__text">Мы будем рады любым пожертвованиям. Деньги пойдут на корм, лечение и уход, а также, на обустройство территории, где обитают наши маленькие питомцы.</p>
           </div>
+          <div class="help__item_pics help__money_pics">
+            <div class="help__item_pic">
+              <img src="image/help/rabbit.jpg" alt="" class="help__item_image">
+            </div>
+            <div class="help__item_pic">
+              <img src="image/help/dog1.jpg" alt="" class="help__item_image">
+            </div>
+            <div class="help__item_pic">
+              <img src="image/help/dog2.jpg" alt="" class="help__item_image">
+            </div>
+          </div>
         </li>
 
         <li class="help__item help__item_volunteer">
-          <div class="help__volunteer volunteer">
-            <h3 class="section__title volunteer__title">Стать волонером</h3>
-            <div class="volunteer__text-wrap">
+          <h3 class="section__title volunteer__title">Стать волонером</h3>
+          <div class="help__volunteer_wrap">
+            <div class="help__volunteer volunteer">
               <p class="section__text volunteer__text">Наш приют "Friendly House" привлекает волонтеров для оказания помощи в самых разных форматах! От финансовой помощи и
                 набирающего популярность интеллектуального волонтерства до помощи руками. </p>
               <p class="section__text volunteer__text">Нам всегда нужна помощь с выгулом подопечных, уборкой помещений, привезти в приют корм или медикаменты, помочь с
                 перевозкой животных в клиники, забрать и привезти вещи
                 и много всего другого. Мы всегда рады любой помощи, присоединяйтесь к нашей дружной команде! :)</p>
+            </div>
+            <div class="help__item_pics help__volunteer_pics">
+              <div class="help__item_pic">
+                <img src="image/help/girl_with_dog.jpg" alt="" class="help__item_image">
+              </div>
             </div>
           </div>
         </li>
@@ -273,6 +292,17 @@
               мог себе этого позволить
               по каким-либо причинам.</p>
           </div>
+          <div class="help__item_pics help__conservator_pics">
+            <div class="help__item_pic">
+              <img src="image/help/cat.jpg" alt="" class="help__item_image">
+            </div>
+            <div class="help__item_pic">
+              <img src="image/help/cat_and_hand.jpg" alt="" class="help__item_image">
+            </div>
+            <div class="help__item_pic">
+              <img src="image/help/man_with_dog.jpg" alt="" class="help__item_image">
+            </div>
+          </div>
         </li>
       </ul>
       <button class="button help__button">
@@ -281,7 +311,7 @@
     </div>
   </section>
 
-  <section class="section pets">
+  <!-- <section class="section pets">
     <div class="container">
       <h2 class="section__title pets__title_">Наши питомцы</h2>
       <ul class="pets__content">

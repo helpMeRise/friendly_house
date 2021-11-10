@@ -16,9 +16,58 @@
   margin-bottom: 50px;
 }
 
+.help__list {
+  margin-bottom: 50px;
+}
+
+.help__item {
+  display: flex;
+  justify-content: space-between;
+  &_money {
+    margin-bottom: 70px;
+  }
+}
+
+.help__money_pics {
+  display: grid;
+  grid-template-areas: 
+  "rebbit dog2"
+  "dog dog2";
+  gap: 20px;
+  .help__item_pic {
+    &:nth-child(1) {
+      grid-area: rebbit;
+    }
+    &:nth-child(2) {
+      grid-area: dog;
+    }
+    &:nth-child(3) {
+      grid-area: dog2;
+    }
+  }
+}
+
+.help__conservator_pics {
+  display: grid;
+  grid-template-areas: 
+  "cat cat_and_hand"
+  "cat man_and_dog";
+  gap: 20px;
+  .help__item_pic {
+    &:nth-child(1) {
+      grid-area: cat;
+    }
+    &:nth-child(2) {
+      grid-area: cat_and_hand;
+    }
+    &:nth-child(3) {
+      grid-area: man_and_dog;
+    }
+  }
+}
+
 .help__money {
   max-width: 377px;
-  margin-bottom: 130px;
   padding-left: 102px;
   padding-top: 50px;
 }
@@ -53,7 +102,9 @@
 
 .help__volunteer {
   max-width: 570px;
-  padding-left: 102px;
+  &_pics {
+    order: 0;
+  }
 }
 
 .volunteer__title {
@@ -64,6 +115,7 @@
   font-weight: 550;
   font-size: 30px;
   line-height: 40px;
+  padding-left: 102px;
 }
 
 .volunteer__title:before {
@@ -73,7 +125,7 @@
   align-items: center;
   content: '2';
   top: -50%;
-  left: -100px;
+  left: 0;
   width: 80px;
   height: 80px;
   background-color: #fff;
@@ -84,15 +136,12 @@
   font-weight: 400;
 }
 
-.volunteer__text-wrap {
-  padding-left: 490px;
-  display: flex;
-  flex-direction: column;
-}
-
 .volunteer__text {
   width: 580px;
   max-width: 580px;
+  &:first-child {
+    padding-top: 20px;
+  }
 }
 
 .help__conservator {
@@ -132,32 +181,24 @@
 .conservator__text {
   max-width: 480px;
   width: 470px;
+  margin-bottom: 0;
 }
 
 .help__text {
   width: 380px;
-}
-
-.help__item_money {
-  height: 380px;
-  background: 
-    url('../image/help/rabbit.jpg') top right 400px no-repeat,
-    url('../image/help/dog1.jpg') top 160px right 400px no-repeat,
-    url('../image/help/dog2.jpg') top right no-repeat;
+  margin-bottom: 0;
 }
 
 .help__item_volunteer {
-  background: url('../image/help/girl_with_dog.jpg') top 90px left no-repeat;
   margin-bottom: 50px;
+  flex-direction: column;
+  max-height: 580px;
 }
 
-.help__item_conservator {
-  height: 380px;
-  background: 
-    url('../image/help/cat.jpg') top right 300px no-repeat,
-    url('../image/help/cat_and_hand.jpg') top right no-repeat,
-    url('../image/help/man_with_dog.jpg') top 200px right no-repeat;
-  margin-bottom: 50px;
+.help__volunteer_wrap {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
 }
 
 .help__button {
