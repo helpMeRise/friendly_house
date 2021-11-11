@@ -125,3 +125,36 @@ const forms = () => {
 animals();
 burger();
 forms();
+
+
+const slider = () => {
+  const wrap = document.querySelector('.slider');
+  const slides = wrap.querySelectorAll('.slider__item');
+
+  let current = 0;
+  slides[current].classList.add('slider__item_active');
+  wrap.addEventListener('click', event => {
+    let target = event.target;
+    if ( target.closest('.slider__left') ) {
+      slides[current].classList.remove('slider__item_active');
+      current--;
+      if ( current < 0 ) {
+        current = slides.length - 1;
+      }
+      slides[current].classList.add(`slider__item_active`);
+    } else if ( target.closest('.slider__right') ) {
+      slides[current].classList.remove('slider__item_active');
+      current++;
+      if ( current > slides.length - 1 ) {
+        current = 0;
+      }
+      slides[current].classList.add(`slider__item_active`);
+    }
+  })
+
+}
+
+if (window.innerWidth <= 1024) {
+  slider();
+}
+

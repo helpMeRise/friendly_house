@@ -343,49 +343,80 @@
     </div>
   </section>
 
-  <!-- <section class="section pets">
+  <section class="section pets">
     <div class="container">
-      <h2 class="section__title pets__title_">Наши питомцы</h2>
-      <ul class="pets__content">
-        <li class="pets__item pets__item_cavias">
-          <figure class="pets__figure">
-            <img src="image/pets/twinkie_and_pinkie.jpg" alt="Фотография морсикх свинок Твинки и Пинки" class="pets__image">
-            <figcaption class="pets__text">Твинки и Пинки, 2 месяца</figcaption>
-          </figure>
-        </li>
-        <li class="pets__item pets__item_mursik">
-          <figure class="pets__figure">
-            <img src="image/pets/mursik.jpg" alt="Фотография кота Мурзика" class="pets__image">
-            <figcaption class="pets__text">Мурзик, 6 месяцев</figcaption>
-          </figure>
-        </li>
-        <li class="pets__item pets__item_friends">
-          <figure class="pets__figure">
-            <img src="image/pets/misha_and_richard.jpg" alt="Фотография пса Ричарда и кота Миши" class="pets__image">
-            <figcaption class="pets__text">Миша (кот) и Ричард (пёс), 3 года и 5 лет</figcaption>
-          </figure>
-        </li>
-        <li class="pets__item pets__item_jeck">
-          <figure class="pets__figure">
-            <img src="image/pets/jeck.jpg" alt="Фотография пса Джека" class="pets__image">
-            <figcaption class="pets__text">Джек, 1 год</figcaption>
-          </figure>
-        </li>
-        <li class="pets__item pets__item_jerry">
-          <figure class="pets__figure">
-            <img src="image/pets/jerry.jpg" alt="Фотография хомяка Джерри" class="pets__image">
-            <figcaption class="pets__text">Джерри, 3 недели</figcaption>
-          </figure>
-        </li>
-        <li class="pets__item pets__item_parrots">
-          <figure class="pets__figure pets__parrots_wrap">
-            <img src="image/pets/rokkie.jpg" alt="Фотография попугая Рокки" class="pets__image">
-            <img src="image/pets/senya.jpg" alt="Фотография попугая Сени" class="pets__image">
-            <figcaption class="pets__text">Рокки и Сеня, 2 и 3 года</figcaption>
-          </figure>
-        </li>
-        
-      </ul>
+      <h2 class="section__title pets__title">Наши питомцы</h2>
+      <div class="slider">
+        <div class="pets__left slider__left"></div>
+        <div class="pets__right slider__right"></div>
+        <ul class="pets__content">
+          <li class="pets__item pets__item_cavias slider__item">
+            <figure class="pets__figure">
+              <picture>
+                <source media="(max-width: 1024px)" srcset="image/pets/twinkie_and_pinkie_1024.jpg">
+                <source media="(max-width: 1280px)" srcset="image/pets/twinkie_and_pinkie_1280.jpg">
+                <img src="image/pets/twinkie_and_pinkie.jpg" alt="Фотография морсикх свинок Твинки и Пинки" class="pets__image">
+              </picture>
+              <figcaption class="pets__text">Твинки и Пинки, 2 месяца</figcaption>
+            </figure>
+          </li>
+  
+          <li class="pets__item pets__item_mursik slider__item">
+            <figure class="pets__figure">
+              <picture>
+                <source media="(max-width: 1024px)" srcset="image/pets/mursik_1024.jpg">
+                <source media="(max-width: 1280px)" srcset="image/pets/mursik_1280.jpg">
+                <img src="image/pets/mursik.jpg" alt="Фотография кота Мурзика" class="pets__image">
+              </picture>
+              <figcaption class="pets__text">Мурзик, 6 месяцев</figcaption>
+            </figure>
+          </li>
+  
+          <li class="pets__item pets__item_friends slider__item">
+            <figure class="pets__figure">
+              <picture>
+                <source media="(max-width: 1024px)" srcset="image/pets/misha_and_richard_1024.jpg">
+                <source media="(max-width: 1280px)" srcset="image/pets/misha_and_richard_1280.jpg">
+                <img src="image/pets/misha_and_richard.jpg" alt="Фотография пса Ричарда и кота Миши" class="pets__image">
+              </picture>
+              <figcaption class="pets__text">Миша (кот) и Ричард (пёс), 3 года и 5 лет</figcaption>
+            </figure>
+          </li>
+  
+          <li class="pets__item pets__item_jeck slider__item">
+            <figure class="pets__figure">
+              <picture>
+                <source media="(max-width: 1024px)" srcset="image/pets/jeck_1024.jpg">
+                <source media="(max-width: 1280px)" srcset="image/pets/jeck_1280.jpg">
+                <img src="image/pets/jeck.jpg" alt="Фотография пса Джека" class="pets__image">
+              </picture>
+              <figcaption class="pets__text">Джек, 1 год</figcaption>
+            </figure>
+          </li>
+  
+          <li class="pets__item pets__item_jerry slider__item">
+            <figure class="pets__figure">
+              <picture>
+                <source media="(max-width: 1024px)" srcset="image/pets/jerry_1024.jpg">
+                <source media="(max-width: 1280px)" srcset="image/pets/jerry_1280.jpg">
+                <img src="image/pets/jerry.jpg" alt="Фотография пса Джека" class="pets__image">
+              </picture>
+              <figcaption class="pets__text">Джерри, 3 недели</figcaption>
+            </figure>
+          </li>
+
+          <li class="pets__item pets__item_parrots slider__item">
+            <figure class="pets__figure pets__parrots_wrap">
+              <picture>
+                <source media="(max-width: 1024px)" srcset="image/pets/parrots_1024.jpg">
+                <img src="image/pets/parrots.jpg" alt="Фотография попугаев Рокки и Сеня" class="pets__image">
+              </picture>
+              <figcaption class="pets__text">Рокки и Сеня, 2 и 3 года</figcaption>
+            </figure>
+          </li>
+          
+        </ul>
+      </div>
     </div>
   </section>
 
@@ -425,7 +456,7 @@
         </form>
       </div>
     </div>
-  </section> -->
+  </section>
 
   <div class="modal">
     <div class="container">

@@ -34,18 +34,95 @@
       grid-row: 2;
     }
   }
-  &__parrots {
-    &_wrap {
+  &__image {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .pets {
+    padding-top: 70px;
+    padding-bottom: 35px;
+    &__title {
+      font-size: 44px;
+      line-height: 50px;
+      margin-bottom: 40px;
+    }
+    &__content {
+      display: grid;
+      grid-template-columns: repeat(44, 20px);
+      grid-template-rows: 235px 214px 52px;
+      row-gap: 62px;
+      justify-content: center;
+    }
+    &__item {
+      &_cavias {
+        grid-column: 1 / 20;
+        grid-row: 1;
+      }
+      &_mursik {
+        grid-column: 21 / 30;
+        grid-row: 1;
+      }
+      &_friends {
+        grid-column: 31 / 45;
+        grid-row: span 2;
+      }
+      &_jeck {
+        grid-column: 1 / 10;
+        grid-row: 2;
+      }
+      &_jerry {
+        grid-column: 11 / 20;
+        grid-row: 2;
+      }
+      &_parrots {
+        grid-column: 21 / 30;
+        grid-row: 2 / 3;
+      }
+    }
+    &__image {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .pets {
+    padding-top: 60px;
+    padding-bottom: 30px;
+    &__title {
+      font-size: 30px;
+      line-height: 34px;
+      margin-bottom: 32px;
+    }
+    &__content {
+      display: flex;
+    }
+    &__figure {
       display: flex;
       flex-direction: column;
-      & img:first-child {
-        margin-bottom: 0;
-      }
+      align-items: center;
     }
     
   }
-  &__image {
-    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .pets {
+    padding-top: 40px;
+    padding-bottom: 20px;
+    &__title {
+      font-size: 20px;
+      line-height: 24px;
+      margin-bottom: 20px;
+    }
+    &__item {
+      max-width: 470px;
+      img {
+        max-width: 100%;
+      }
+    }
   }
 }
 
