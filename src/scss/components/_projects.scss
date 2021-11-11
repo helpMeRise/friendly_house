@@ -100,55 +100,55 @@
   grid-area: more__title;
 }
 
-.projects__info-project:first-child {
+.projects__info-project:nth-child(2) {
   grid-area: first;
 }
 
-.projects__info-project:nth-child(2) {
+.projects__info-project:nth-child(3) {
   grid-area: second;
 }
 
-.projects__info-project:nth-child(3) {
+.projects__info-project:nth-child(4) {
   grid-area: third;
 }
 
-.projects__info-project:nth-child(4) {
+.projects__info-project:nth-child(5) {
   grid-area: fourth;
 }
 
-.projects__info-project:nth-child(5) {
+.projects__info-project:nth-child(6) {
   grid-area: fifth;
 }
 
-.projects__info-project:nth-child(6) {
+.projects__info-project:nth-child(7) {
   grid-area: sixth;
 }
 
-.projects__info-project:nth-child(7) {
+.projects__info-project:nth-child(8) {
   grid-area: seventh;
 }
 
-.projects__info-project:nth-child(8) {
+.projects__info-project:nth-child(9) {
   grid-area: eighth;
 }
 
-.projects__info-project:nth-child(9) {
+.projects__info-project:nth-child(10) {
   grid-area: nineth;
 }
 
-.projects__info-project:nth-child(10) {
+.projects__info-project:nth-child(11) {
   grid-area: tenth;
 }
 
-.projects__info-project:nth-child(11) {
+.projects__info-project:nth-child(12) {
   grid-area: eleventh;
 }
 
-.projects__info-project:nth-child(12) {
+.projects__info-project:nth-child(13) {
   grid-area: twelfth;
 }
 
-.projects__info_link {
+.projects__info-link {
   display: none;
 }
 
@@ -189,12 +189,12 @@
         line-height: 24px;
         margin-bottom: -14px;
       }
-      &-project:nth-child(7),
       &-project:nth-child(8),
       &-project:nth-child(9),
       &-project:nth-child(10),
       &-project:nth-child(11),
-      &-project:nth-child(12) {
+      &-project:nth-child(12),
+      &-project:nth-child(13) {
         display: none;
       }
       &-link {
@@ -382,8 +382,8 @@
         width: 60px;
         height: 52px;
       }
-      &-project:nth-child(5),
-      &-project:nth-child(6) {
+      &-project:nth-child(6),
+      &-project:nth-child(7) {
         display: none;
       }
     }

@@ -54,7 +54,7 @@
     flex-direction: column;
     gap: 20px;
   }
-  &_-link {
+  &__link {
     position: relative;
     font-weight: 550;
     font-size: 20px;
@@ -123,7 +123,9 @@
     &-tg {
       background: url('../../image/footer/tg.svg') center / contain no-repeat;
     } 
-    &:hover {
+    &:hover,
+    &:focus,
+    &:active {
       background-color: transparentize($main, 0.7);
     }
   }

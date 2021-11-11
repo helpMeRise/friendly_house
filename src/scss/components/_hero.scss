@@ -14,6 +14,7 @@
 }
 
 .hero__info {
+  display: flex;
   z-index: 2;
   position: relative;
   width: 180px;
@@ -25,6 +26,9 @@
   height: 580px;
   left: 50%;
   transform: translateX(-50%);
+  img {
+    max-width: 100%;
+  }
 }
 
 .hero__title {

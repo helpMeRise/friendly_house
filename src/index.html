@@ -64,7 +64,7 @@
         <a href="tel:88493003957" class="header__phone header__phone_mob">8 (849) 300 - 39 -57</a>
       </nav>
       
-      <img src="image/header/logo.svg" alt="Логотип" class="logo">
+      <img src="image/header/logo.svg" alt="Логотип" class="logo" width="356px" height="72px">
 
       <a href="tel:88493003957" class="header__phone">8 (849) 300 - 39 -57</a>
     </div>
@@ -77,11 +77,16 @@
         
 
         <button class="button hero__button">
-          <img src="image/paw.svg" alt="">
+          <img src="image/paw.svg" alt="" width="111px" height="101">
           Жми на лапку, чтобы помочь!</button>
       </div>
 
-      <img src="image/hero/sara_big.png" alt="" class="hero__image">
+      <picture class="hero__image">
+        <source srcset="image/hero/sara_big.avif" type="image/avif">
+        <source srcset="image/hero/sara_big.webp" type="image/webp">
+        <img src="image/hero/sara_big.png" alt="" width="580px" height="580px">
+      </picture>
+      
       
       <ul class="hero__list">
         <li tabindex="0" class="hero__item hero__item_sara hero__item_show">Сара</li>
@@ -435,7 +440,7 @@
         </div>
 
 
-        <form action="https://jsonplaceholder.typicode.com/posts" method="POST" class="contact__form form" target="_blank">
+        <form action="https://jsonplaceholder.typicode.com/posts" method="POST" class="contact__form form" target="_blank" id="contact__form">
           <p class=" section__text form__text">Или оставь свои контакты и мы сами свяжемся с тобой!</p>
 
           <div class="form__inputs">
@@ -519,7 +524,7 @@
         </div>
 
 
-        <form action="https://jsonplaceholder.typicode.com/posts" method="POST" class="contact__form modal__form form" target="_blank">
+        <form action="https://jsonplaceholder.typicode.com/posts" method="POST" class="contact__form modal__form form" target="_blank" id="modal__form">
           <p class="section__text form__text">Или оставь свои контакты и мы сами свяжемся с тобой!</p>
 
           <div class="form__inputs">
