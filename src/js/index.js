@@ -158,3 +158,26 @@ if (window.innerWidth <= 1024) {
   slider();
 }
 
+let myMap;
+
+// Дождёмся загрузки API и готовности DOM.
+ymaps.ready(init);
+
+function init () {
+    myMap = new ymaps.Map('map', {
+        center: [55.849206, 37.375674], 
+        zoom: 13,
+        controls: [],
+    });
+
+    const mark = new ymaps.Placemark([55.849206, 37.375674], {}, {
+      iconLayout: 'default#image',
+      iconImageHref: 'image/footer/mark.svg',
+      iconImageSize: [30, 42],
+      iconImageOffset: [-40, -40]  
+    });
+
+    myMap.geoObjects.add(mark);
+
+}
+

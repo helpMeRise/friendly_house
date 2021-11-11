@@ -32,26 +32,26 @@
   "image ifo";
 }
 
-.projects__item_info {
+.projects__item-info {
   display: flex;
   flex-direction: column;
 }
 
-.projects__item_title {
+.projects__item-title {
   font-weight: 550;
   font-size: 30px;
   line-height: 40px;
   margin-bottom: 15px;
 }
 
-.projects__item_text {
+.projects__item-text {
   font-weight: 300;
   font-size: 20px;
   line-height: 30px;
   margin-bottom: 22px;
 }
 
-.projects__item_link {
+.projects__item-link {
   align-self: flex-start;
 }
 
@@ -96,55 +96,55 @@
   "nineth tenth eleventh twelfth";
 }
 
-.projects__info_text {
+.projects__info-text {
   grid-area: more__title;
 }
 
-.projects__info_project:first-child {
+.projects__info-project:first-child {
   grid-area: first;
 }
 
-.projects__info_project:nth-child(2) {
+.projects__info-project:nth-child(2) {
   grid-area: second;
 }
 
-.projects__info_project:nth-child(3) {
+.projects__info-project:nth-child(3) {
   grid-area: third;
 }
 
-.projects__info_project:nth-child(4) {
+.projects__info-project:nth-child(4) {
   grid-area: fourth;
 }
 
-.projects__info_project:nth-child(5) {
+.projects__info-project:nth-child(5) {
   grid-area: fifth;
 }
 
-.projects__info_project:nth-child(6) {
+.projects__info-project:nth-child(6) {
   grid-area: sixth;
 }
 
-.projects__info_project:nth-child(7) {
+.projects__info-project:nth-child(7) {
   grid-area: seventh;
 }
 
-.projects__info_project:nth-child(8) {
+.projects__info-project:nth-child(8) {
   grid-area: eighth;
 }
 
-.projects__info_project:nth-child(9) {
+.projects__info-project:nth-child(9) {
   grid-area: nineth;
 }
 
-.projects__info_project:nth-child(10) {
+.projects__info-project:nth-child(10) {
   grid-area: tenth;
 }
 
-.projects__info_project:nth-child(11) {
+.projects__info-project:nth-child(11) {
   grid-area: eleventh;
 }
 
-.projects__info_project:nth-child(12) {
+.projects__info-project:nth-child(12) {
   grid-area: twelfth;
 }
 
@@ -184,20 +184,20 @@
     &__info {
       max-width: 280px;
       gap: 33px;
-      &_text {
+      &-text {
         font-size: 18px;
         line-height: 24px;
         margin-bottom: -14px;
       }
-      &_project:nth-child(7),
-      &_project:nth-child(8),
-      &_project:nth-child(9),
-      &_project:nth-child(10),
-      &_project:nth-child(11),
-      &_project:nth-child(12) {
+      &-project:nth-child(7),
+      &-project:nth-child(8),
+      &-project:nth-child(9),
+      &-project:nth-child(10),
+      &-project:nth-child(11),
+      &-project:nth-child(12) {
         display: none;
       }
-      &_link {
+      &-link {
         display: block;
         grid-area: more__link;
         text-align: right;
@@ -251,13 +251,13 @@
     &__item {
       max-width: 400px;
       gap: 10px;
-      &_title {
+      &-title {
         font-size: 18px;
         line-height: 24px;
         margin-bottom: 3px;
       }
       
-      &_text {
+      &-text {
         font-size: 14px;
         line-height: 20px;
         margin-bottom: 13px;
@@ -267,7 +267,7 @@
         text-overflow: ellipsis;
         overflow: hidden;
       }
-      &_link {
+      &-link {
         font-size: 14px;
         line-height: 20px;
       }
@@ -282,16 +282,16 @@
     &__info {
       max-width: 220px;
       gap: 20px;
-      &_text {
+      &-text {
         font-size: 14px;
         line-height: 20px;
       }
-      &_link {
+      &-link {
         font-size: 14px;
         line-height: 20px;
         margin-top: -15px;
       }
-      &_pic {
+      &-pic {
         width: 60px;
         height: 52px;
       }
@@ -346,13 +346,13 @@
     &__item {
       max-width: 270px;
       gap: 10px;
-      &_title {
+      &-title {
         font-size: 16px;
         line-height: 22px;
         margin-bottom: 10px;
       }
       
-      &_text {
+      &-text {
         font-size: 14px;
         line-height: 20px;
         margin-bottom: 17px;
@@ -368,22 +368,22 @@
     &__info {
       max-width: 270px;
       gap: 30px;
-      &_text {
+      &-text {
         font-size: 14px;
         line-height: 20px;
         margin-bottom: 0;
       }
-      &_link {
+      &-link {
         font-size: 14px;
         line-height: 20px;
         margin-top: 0;
       }
-      &_pic {
+      &-pic {
         width: 60px;
         height: 52px;
       }
-      &_project:nth-child(5),
-      &_project:nth-child(6) {
+      &-project:nth-child(5),
+      &-project:nth-child(6) {
         display: none;
       }
     }

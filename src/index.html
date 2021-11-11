@@ -30,6 +30,8 @@
     })
   </script>
 
+<script src="https://api-maps.yandex.ru/2.1/?apikey=123&lang=ru_RU"></script>
+
   <script type="module" src="js/index.min.js"></script>
   <title>Friendly house</title>
 </head>
@@ -48,12 +50,12 @@
             <a href="#about">О приютe</a>
           </li>
           <li class="burger__item">
-            <a href="#">Наши проекты</a></li>
+            <a href="#projects">Наши проекты</a></li>
           <li class="burger__item">
             <a href="#help">Как ты можешь помочь нам?</a>
           </li>
           <li class="burger__item">
-            <a href="#">Наши питомцы</a>
+            <a href="#pets">Наши питомцы</a>
           </li>
           <li class="burger__item">
             <a href="#contact">Контакты</a>
@@ -82,11 +84,11 @@
       <img src="image/hero/sara_big.png" alt="" class="hero__image">
       
       <ul class="hero__list">
-        <li class="hero__item hero__item_sara hero__item_show">Сара</li>
-        <li class="hero__item hero__item_boris">Борис</li>
-        <li class="hero__item hero__item_lui">Луи</li>
-        <li class="hero__item hero__item_piter">Питер</li>
-        <li class="hero__item hero__item_kenni">Кенни</li>
+        <li tabindex="0" class="hero__item hero__item_sara hero__item_show">Сара</li>
+        <li tabindex="0" class="hero__item hero__item_boris">Борис</li>
+        <li tabindex="0" class="hero__item hero__item_lui">Луи</li>
+        <li tabindex="0" class="hero__item hero__item_piter">Питер</li>
+        <li tabindex="0" class="hero__item hero__item_kenni">Кенни</li>
       </ul>
     </div>
   </section>
@@ -107,12 +109,12 @@
     </div>
   </section>
 
-  <section class="section projects">
+  <section class="section projects" id="projects">
     <div class="container projects__container">
         <h2 class="section__title projects__title">Наши проекты</h2>
 
         <ul class="projects__list">
-          <li class="projects__item">
+          <li tabindex="0" class="projects__item">
             <picture>
               <source media="(max-width: 480px)" srcset="image/projects/new_house_mob.avif" type="image/avif">
               <source media="(max-width: 480px)" srcset="image/projects/new_house_mob.webp" type="image/webp">
@@ -121,14 +123,14 @@
               <source srcset="image/projects/new_house.webp" type="image/webp">
               <img src="image/projects/new_house.jpg" alt="" class="projects__image">
             </picture>
-            <div class="projects__item_info">
-              <h3 class="projects__item_title">Новый дом для животных</h3>
-              <p class="projects__item_text">Приют появился практически одновременно с созданием Фонда в ...</p>
-              <a href="" class="link projects__item_link">Подробнее</a>
+            <div class="projects__item-info">
+              <h3 class="projects__item-title">Новый дом для животных</h3>
+              <p class="projects__item-text">Приют появился практически одновременно с созданием Фонда в ...</p>
+              <a href="" class="link projects__item-link">Подробнее</a>
             </div>
 
           </li>
-          <li class="projects__item">
+          <li tabindex="0" class="projects__item">
             <picture>
               <source media="(max-width: 480px)" srcset="image/projects/little_mod_mob.avif" type="image/avif">
               <source media="(max-width: 480px)" srcset="image/projects/little_mod_mob.webp" type="image/webp">
@@ -137,14 +139,14 @@
               <source srcset="image/projects/little_mod.webp" type="image/webp">
               <img src="image/projects/new_house.jpg" alt="" class="projects__image">
             </picture>
-            <div class="projects__item_info">
-              <h3 class="projects__item_title">Маленькие модники</h3>
-              <p class="projects__item_text">Наши котики и собачки тоже любят наряжаться, чтобы красиво выглядеть ... </p>
-              <a href="" class="link projects__item_link">Подробнее</a>
+            <div class="projects__item-info">
+              <h3 class="projects__item-title">Маленькие модники</h3>
+              <p class="projects__item-text">Наши котики и собачки тоже любят наряжаться, чтобы красиво выглядеть ... </p>
+              <a href="" class="link projects__item-link">Подробнее</a>
             </div>
 
           </li>
-          <li class="projects__item">
+          <li tabindex="0" class="projects__item">
             <picture>
               <source media="(max-width: 480px)" srcset="image/projects/play_mob.avif" type="image/avif">
               <source media="(max-width: 480px)" srcset="image/projects/play_mob.webp" type="image/webp">
@@ -153,14 +155,14 @@
               <source srcset="image/projects/play.webp" type="image/webp">
               <img src="image/projects/new_house.jpg" alt="" class="projects__image">
             </picture>
-            <div class="projects__item_info">
-              <h3 class="projects__item_title">Поиграй со мной!</h3>
-              <p class="projects__item_text">Новая программа нашего приюта “Поиграй со мной”. Приводите своих ...</p>
-              <a href="" class="link projects__item_link">Подробнее</a>
+            <div class="projects__item-info">
+              <h3 class="projects__item-title">Поиграй со мной!</h3>
+              <p class="projects__item-text">Новая программа нашего приюта “Поиграй со мной”. Приводите своих ...</p>
+              <a href="" class="link projects__item-link">Подробнее</a>
             </div>
 
           </li>
-          <li class="projects__item">
+          <li tabindex="0" class="projects__item">
             <picture>
               <source media="(max-width: 480px)" srcset="image/projects/best_photo_mob.avif" type="image/avif">
               <source media="(max-width: 480px)" srcset="image/projects/best_photo_mob.webp" type="image/webp">
@@ -169,10 +171,10 @@
               <source srcset="image/projects/best_photo.webp" type="image/webp">
               <img src="image/projects/new_house.jpg" alt="" class="projects__image">
             </picture>
-            <div class="projects__item_info">
-              <h3 class="projects__item_title">Конкурс “Лучшее фото”</h3>
-              <p class="projects__item_text">Приходи к нам в Friendly House и делай классные фотографии наших животн...</p>
-              <a href="" class="link projects__item_link">Подробнее</a>
+            <div class="projects__item-info">
+              <h3 class="projects__item-title">Конкурс “Лучшее фото”</h3>
+              <p class="projects__item-text">Приходи к нам в Friendly House и делай классные фотографии наших животн...</p>
+              <a href="" class="link projects__item-link">Подробнее</a>
             </div>
 
           </li>
@@ -181,60 +183,60 @@
         <div class="projects__info">
           <article class="article projects__article">
             <a href="#" class="link article__link">Подробнее</a>
-            <p class="article__text">Собака лучший друг человека, или.... собаки?</p>
+            <h3 class="article__text">Собака лучший друг человека, или.... собаки?</h3>
           </article>
           <div class="projects__more">
-            <h4 class="projects__info_text">Больше проектов</h4>
+            <h4 class="projects__info-text">Больше проектов</h4>
             
-            <a href="#" class="projects__info_project">
-              <img src="image/projects/1.jpg" alt="" class="projects__info_pic">
+            <a href="#" class="projects__info-project">
+              <img src="image/projects/1.jpg" alt="" class="projects__info-pic">
             </a>
 
-            <a href="#" class="projects__info_project">
-              <img src="image/projects/2.jpg" alt="" class="projects__info_pic">
+            <a href="#" class="projects__info-project">
+              <img src="image/projects/2.jpg" alt="" class="projects__info-pic">
             </a>
 
-            <a href="#" class="projects__info_project">
-              <img src="image/projects/3.jpg" alt="" class="projects__info_pic">
+            <a href="#" class="projects__info-project">
+              <img src="image/projects/3.jpg" alt="" class="projects__info-pic">
             </a>
 
-            <a href="#" class="projects__info_project">
-              <img src="image/projects/4.jpg" alt="" class="projects__info_pic">
+            <a href="#" class="projects__info-project">
+              <img src="image/projects/4.jpg" alt="" class="projects__info-pic">
             </a>
 
-            <a href="#" class="projects__info_project">
-              <img src="image/projects/5.jpg" alt="" class="projects__info_pic">
+            <a href="#" class="projects__info-project">
+              <img src="image/projects/5.jpg" alt="" class="projects__info-pic">
             </a>
 
-            <a href="#" class="projects__info_project">
-              <img src="image/projects/6.jpg" alt="" class="projects__info_pic">
+            <a href="#" class="projects__info-project">
+              <img src="image/projects/6.jpg" alt="" class="projects__info-pic">
             </a>
 
-            <a href="#" class="projects__info_project">
-              <img src="image/projects/7.jpg" alt="" class="projects__info_pic">
+            <a href="#" class="projects__info-project">
+              <img src="image/projects/7.jpg" alt="" class="projects__info-pic">
             </a>
 
-            <a href="#" class="projects__info_project">
-              <img src="image/projects/8.jpg" alt="" class="projects__info_pic">
+            <a href="#" class="projects__info-project">
+              <img src="image/projects/8.jpg" alt="" class="projects__info-pic">
             </a>
 
-            <a href="#" class="projects__info_project">
-              <img src="image/projects/9.jpg" alt="" class="projects__info_pic">
+            <a href="#" class="projects__info-project">
+              <img src="image/projects/9.jpg" alt="" class="projects__info-pic">
             </a>
 
-            <a href="#" class="projects__info_project">
-              <img src="image/projects/10.jpg" alt="" class="projects__info_pic">
+            <a href="#" class="projects__info-project">
+              <img src="image/projects/10.jpg" alt="" class="projects__info-pic">
             </a>
 
-            <a href="#" class="projects__info_project">
-              <img src="image/projects/11.jpg" alt="" class="projects__info_pic">
+            <a href="#" class="projects__info-project">
+              <img src="image/projects/11.jpg" alt="" class="projects__info-pic">
             </a>
 
-            <a href="#" class="projects__info_project">
-              <img src="image/projects/12.jpg" alt="" class="projects__info_pic">
+            <a href="#" class="projects__info-project">
+              <img src="image/projects/12.jpg" alt="" class="projects__info-pic">
             </a>
 
-            <a href="" class=" link projects__info_link">Увидеть все</a>
+            <a href="#" class=" link projects__info-link">Увидеть все</a>
           </div>
         </div>
     </div>
@@ -252,34 +254,34 @@
     
             <p class="section__text help__text">Мы будем рады любым пожертвованиям. Деньги пойдут на корм, лечение и уход, а также, на обустройство территории, где обитают наши маленькие питомцы.</p>
           </div>
-          <div class="help__item_pics help__money_pics">
-            <div class="help__item_pic">
+          <div class="help__item-pics help__money-pics">
+            <div class="help__item-pic">
               <picture>
                 <source media="(max-width: 768px)" srcset="image/help/rabbit_768.jpg">
                 <source media="(max-width: 1024px)" srcset="image/help/rabbit_1024.jpg">
-                <img src="image/help/rabbit.jpg" alt="" class="help__item_image">
+                <img src="image/help/rabbit.jpg" alt="" class="help__item-image">
               </picture>
             </div>
-            <div class="help__item_pic">
+            <div class="help__item-pic">
               <picture>
                 <source media="(max-width: 768px)" srcset="image/help/dog1_768.jpg">
                 <source media="(max-width: 1024px)" srcset="image/help/dog1_1024.jpg">
-                <img src="image/help/dog1.jpg" alt="" class="help__item_image">
+                <img src="image/help/dog1.jpg" alt="" class="help__item-image">
               </picture>
             </div>
-            <div class="help__item_pic">
+            <div class="help__item-pic">
               <picture>
                 <source media="(max-width: 768px)" srcset="image/help/dog2_768.jpg">
                 <source media="(max-width: 1024px)" srcset="image/help/dog2_1024.jpg">
-                <img src="image/help/dog2.jpg" alt="" class="help__item_image">
+                <img src="image/help/dog2.jpg" alt="" class="help__item-image">
               </picture>
             </div>
           </div>
         </li>
 
         <li class="help__item help__item_volunteer">
-          <h3 class="section__title volunteer__title">Стать волонером</h3>
-          <div class="help__volunteer_wrap">
+          <h3 class="section__title volunteer-title">Стать волонером</h3>
+          <div class="help__volunteer-wrap">
             <div class="help__volunteer volunteer">
               <p class="section__text volunteer__text">Наш приют "Friendly House" привлекает волонтеров для оказания помощи в самых разных форматах! От финансовой помощи и
                 набирающего популярность интеллектуального волонтерства до помощи руками. </p>
@@ -287,12 +289,12 @@
                 перевозкой животных в клиники, забрать и привезти вещи
                 и много всего другого. Мы всегда рады любой помощи, присоединяйтесь к нашей дружной команде! :)</p>
             </div>
-            <div class="help__item_pics help__volunteer_pics">
-              <div class="help__item_pic">
+            <div class="help__item-pics help__volunteer-pics">
+              <div class="help__item-pic">
                 <picture>
                   <source media="(max-width: 768px)" srcset="image/help/girl_with_dog_768.jpg">
                   <source media="(max-width: 1024px)" srcset="image/help/girl_with_dog_1024.jpg">
-                  <img src="image/help/girl_with_dog.jpg" alt="" class="help__item_image">
+                  <img src="image/help/girl_with_dog.jpg" alt="" class="help__item-image">
                 </picture>
                 
               </div>
@@ -309,28 +311,28 @@
               мог себе этого позволить
               по каким-либо причинам.</p>
           </div>
-          <div class="help__item_pics help__conservator_pics">
-            <div class="help__item_pic">
+          <div class="help__item-pics help__conservator-pics">
+            <div class="help__item-pic">
               <picture>
                 <source media="(max-width: 768px)" srcset="image/help/cat_768.jpg">
                 <source media="(max-width: 1024px)" srcset="image/help/cat_1024.jpg">
-                <img src="image/help/cat.jpg" alt="" class="help__item_image">
+                <img src="image/help/cat.jpg" alt="" class="help__item-image">
               </picture>
               
             </div>
-            <div class="help__item_pic">
+            <div class="help__item-pic">
               <picture>
                 <source media="(max-width: 768px)" srcset="image/help/cat_and_hand_768.jpg">
                 <source media="(max-width: 1024px)" srcset="image/help/cat_and_hand_1024.jpg">
-                <img src="image/help/cat_and_hand.jpg" alt="" class="help__item_image">
+                <img src="image/help/cat_and_hand.jpg" alt="" class="help__item-image">
               </picture>
               
             </div>
-            <div class="help__item_pic">
+            <div class="help__item-pic">
               <picture>
                 <source media="(max-width: 768px)" srcset="image/help/man_with_dog_768.jpg">
                 <source media="(max-width: 1024px)" srcset="image/help/man_with_dog_1024.jpg">
-                <img src="image/help/man_with_dog.jpg" alt="" class="help__item_image">
+                <img src="image/help/man_with_dog.jpg" alt="" class="help__item-image">
               </picture>
               
             </div>
@@ -343,7 +345,7 @@
     </div>
   </section>
 
-  <section class="section pets">
+  <section class="section pets" id="pets">
     <div class="container">
       <h2 class="section__title pets__title">Наши питомцы</h2>
       <div class="slider">
@@ -406,7 +408,7 @@
           </li>
 
           <li class="pets__item pets__item_parrots slider__item">
-            <figure class="pets__figure pets__parrots_wrap">
+            <figure class="pets__figure">
               <picture>
                 <source media="(max-width: 1024px)" srcset="image/pets/parrots_1024.jpg">
                 <img src="image/pets/parrots.jpg" alt="Фотография попугаев Рокки и Сеня" class="pets__image">
@@ -420,7 +422,7 @@
     </div>
   </section>
 
-  <section class="section contact" id="contact">
+  <section class="section contact" >
     <div class="container">
       <div class="contact__container">
         <h2 class="section__title contact__title">Ты можешь помочь нам!</h2>
@@ -458,19 +460,21 @@
     </div>
   </section>
 
-  <footer class="footer section">
-    <div class="footer__container">
-      <div class="map"></div>
+  <footer class="footer section" id="contact">
+    <div class="container footer__container">
+      <div class="footer__map-wrap">
+        <div class="map footer__map" style="width: auto; height: 100%" id="map"></div>
+      </div>
 
       <address class="footer__address">
-        <h2 class="section__title footer__title">Friendly House</h2>
+      <p class="section__title footer__title">Friendly House</p>
       <p class="footer__subtitle">приют для животных</p>
 
       <p class="footer__text">103929, Москва, Пятницкое шоссе, дом 28</p>
 
-      <div class="footer__contacts contact__contacts">
-        <a href="tel:88493003957" class="footer__link contacts__link footer__phone">8 (849) 300 - 39 -57</a>
-        <a href="mailto:FriendlyHouse@gmail.com" class="footer__link contacts__link footer__email">FriendlyHouse@gmail.com</a>
+      <div class="footer__contacts">
+        <a href="tel:88493003957" class="footer__link footer__phone">8 (849) 300 - 39 -57</a>
+        <a href="mailto:FriendlyHouse@gmail.com" class="footer__link footer__email">FriendlyHouse@gmail.com</a>
       </div>
       </address>
 
@@ -482,27 +486,27 @@
       <div class="footer__socials">
         <ul class="footer__list">
           <li class="footer__item">
-            <a href="#" class="footer__social_link"></a>
+            <a href="#" class="footer__socials-link footer__item-inst"></a>
           </li>
           <li class="footer__item">
-            <a href="#" class="footer__social_link"></a>
+            <a href="#" class="footer__socials-link footer__item-vk"></a>
           </li>
           <li class="footer__item">
-            <a href="#" class="footer__social_link"></a>
+            <a href="#" class="footer__socials-link footer__item-fb"></a>
           </li>
           <li class="footer__item">
-            <a href="#" class="footer__social_link"></a>
+            <a href="#" class="footer__socials-link footer__item-tg"></a>
           </li>
         </ul>
 
         <p class="footer__author">Design by Anastasia Ilina</p>
-        <a href="mailto:ilina9825@gmail.com" class="footer__author_email">ilina9825@gmail.com</a>
+        <a href="mailto:ilina9825@gmail.com" class="footer__author footer__author_email">ilina9825@gmail.com</a>
       </div>
 
     </div>
   </footer>
 
-  <div class="modal">
+  <div class="section modal contact">
     <div class="container">
       <div class="contact__container modal__container">
         <h2 class="section__title modal__title contact__title">Ты можешь помочь нам!</h2>
@@ -515,7 +519,7 @@
         </div>
 
 
-        <form action="https://jsonplaceholder.typicode.com/posts" method="POST" class="contact__form modal__form" target="_blank">
+        <form action="https://jsonplaceholder.typicode.com/posts" method="POST" class="contact__form modal__form form" target="_blank">
           <p class="section__text form__text">Или оставь свои контакты и мы сами свяжемся с тобой!</p>
 
           <div class="form__inputs">
