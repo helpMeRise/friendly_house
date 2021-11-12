@@ -16,7 +16,7 @@
       transform: translateY(-50%);
       width: 54px;
       height: 54px;
-      background: url('../../image/pets/left.svg') center / contain no-repeat;
+      background: url('../image/pets/left.svg') center / contain no-repeat;
     }
     &__right {
       z-index: 2;
@@ -27,7 +27,7 @@
       transform: translateY(-50%);
       width: 54px;
       height: 54px;
-      background: url('../../image/pets/right.svg') center / contain no-repeat;
+      background: url('../image/pets/right.svg') center / contain no-repeat;
     }
   }
 }

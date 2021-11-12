@@ -112,16 +112,16 @@
     border-radius: 50%;
     transition: 0.2s;
     &-inst {
-      background: url('../../image/footer/inst.svg') center / contain no-repeat;
+      background: url('../image/footer/inst.svg') center / contain no-repeat;
     }    
     &-vk {
-      background: url('../../image/footer/vk.svg') center / contain no-repeat;
+      background: url('../image/footer/vk.svg') center / contain no-repeat;
     }
     &-fb {
-      background: url('../../image/footer/fb.svg') center / contain no-repeat;
+      background: url('../image/footer/fb.svg') center / contain no-repeat;
     }
     &-tg {
-      background: url('../../image/footer/tg.svg') center / contain no-repeat;
+      background: url('../image/footer/tg.svg') center / contain no-repeat;
     } 
     &:hover,
     &:focus,
