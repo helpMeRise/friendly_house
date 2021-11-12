@@ -30,9 +30,7 @@
     })
   </script>
 
-<!-- <script src="https://api-maps.yandex.ru/2.1/?apikey=123&lang=ru_RU"></script> -->
-
-  <script type="module" src="js/index.min.js"></script>
+  <script defer src="js/index.min.js"></script>
   <title>Friendly house</title>
 </head>
 
@@ -264,6 +262,8 @@
               <picture>
                 <source media="(max-width: 768px)" srcset="image/help/rabbit_768.jpg">
                 <source media="(max-width: 1024px)" srcset="image/help/rabbit_1024.jpg">
+                <source srcset="image/help/rabbit.avif" type="image/avif">
+                <source srcset="image/help/rabbit.webp" type="image/webp">
                 <img src="image/help/rabbit.jpg" alt="" class="help__item-image">
               </picture>
             </div>
@@ -271,6 +271,8 @@
               <picture>
                 <source media="(max-width: 768px)" srcset="image/help/dog1_768.jpg">
                 <source media="(max-width: 1024px)" srcset="image/help/dog1_1024.jpg">
+                <source srcset="image/help/dog1.avif" type="image/avif">
+                <source srcset="image/help/dog1.webp" type="image/webp">
                 <img src="image/help/dog1.jpg" alt="" class="help__item-image">
               </picture>
             </div>
@@ -278,6 +280,8 @@
               <picture>
                 <source media="(max-width: 768px)" srcset="image/help/dog2_768.jpg">
                 <source media="(max-width: 1024px)" srcset="image/help/dog2_1024.jpg">
+                <source srcset="image/help/dog2.avif" type="image/avif">
+                <source srcset="image/help/dog2.webp" type="image/webp">
                 <img src="image/help/dog2.jpg" alt="" class="help__item-image">
               </picture>
             </div>
@@ -299,6 +303,8 @@
                 <picture>
                   <source media="(max-width: 768px)" srcset="image/help/girl_with_dog_768.jpg">
                   <source media="(max-width: 1024px)" srcset="image/help/girl_with_dog_1024.jpg">
+                  <source srcset="image/help/girl_with_dog.avif" type="image/avif">
+                <source srcset="image/help/girl_with_dog.webp" type="image/webp">
                   <img src="image/help/girl_with_dog.jpg" alt="" class="help__item-image">
                 </picture>
                 
@@ -321,6 +327,8 @@
               <picture>
                 <source media="(max-width: 768px)" srcset="image/help/cat_768.jpg">
                 <source media="(max-width: 1024px)" srcset="image/help/cat_1024.jpg">
+                <source srcset="image/help/cat.avif" type="image/avif">
+                <source srcset="image/help/cat.webp" type="image/webp">
                 <img src="image/help/cat.jpg" alt="" class="help__item-image">
               </picture>
               
@@ -329,6 +337,8 @@
               <picture>
                 <source media="(max-width: 768px)" srcset="image/help/cat_and_hand_768.jpg">
                 <source media="(max-width: 1024px)" srcset="image/help/cat_and_hand_1024.jpg">
+                <source srcset="image/help/cat_and_hand.avif" type="image/avif">
+                <source srcset="image/help/cat_and_hand.webp" type="image/webp">
                 <img src="image/help/cat_and_hand.jpg" alt="" class="help__item-image">
               </picture>
               
@@ -337,6 +347,8 @@
               <picture>
                 <source media="(max-width: 768px)" srcset="image/help/man_with_dog_768.jpg">
                 <source media="(max-width: 1024px)" srcset="image/help/man_with_dog_1024.jpg">
+                <source srcset="image/help/man_with_dog.avif" type="image/avif">
+                <source srcset="image/help/man_with_dog.webp" type="image/webp">
                 <img src="image/help/man_with_dog.jpg" alt="" class="help__item-image">
               </picture>
               
@@ -360,8 +372,14 @@
           <li class="pets__item pets__item_cavias slider__item">
             <figure class="pets__figure">
               <picture>
+                <source media="(max-width: 1024px)" srcset="image/pets/twinkie_and_pinkie_1024.avif" type="image/avif">
+                <source media="(max-width: 1024px)" srcset="image/pets/twinkie_and_pinkie_1024.webp" type="image/webp">
                 <source media="(max-width: 1024px)" srcset="image/pets/twinkie_and_pinkie_1024.jpg">
+                <source media="(max-width: 1280px)" srcset="image/pets/twinkie_and_pinkie_1280.avif" type="image/avif">
+                <source media="(max-width: 1280px)" srcset="image/pets/twinkie_and_pinkie_1280.webp" type="image/webp">
                 <source media="(max-width: 1280px)" srcset="image/pets/twinkie_and_pinkie_1280.jpg">
+                <source srcset="image/help/twinkie_and_pinkie.avif" type="image/avif">
+                <source srcset="image/help/twinkie_and_pinkie.webp" type="image/webp">
                 <img src="image/pets/twinkie_and_pinkie.jpg" alt="Фотография морсикх свинок Твинки и Пинки" class="pets__image">
               </picture>
               <figcaption class="pets__text">Твинки и Пинки, 2 месяца</figcaption>
@@ -371,7 +389,11 @@
           <li class="pets__item pets__item_mursik slider__item">
             <figure class="pets__figure">
               <picture>
+                <source media="(max-width: 1024px)" srcset="image/pets/mursik_1024.avif" type="image/avif">
+                <source media="(max-width: 1024px)" srcset="image/pets/mursik_1024.webp" type="image/webp">
                 <source media="(max-width: 1024px)" srcset="image/pets/mursik_1024.jpg">
+                <source media="(max-width: 1280px)" srcset="image/pets/mursik_1280.avif" type="image/avif">
+                <source media="(max-width: 1280px)" srcset="image/pets/mursik_1280.webp" type="image/webp">
                 <source media="(max-width: 1280px)" srcset="image/pets/mursik_1280.jpg">
                 <img src="image/pets/mursik.jpg" alt="Фотография кота Мурзика" class="pets__image">
               </picture>
@@ -382,7 +404,11 @@
           <li class="pets__item pets__item_friends slider__item">
             <figure class="pets__figure">
               <picture>
+                <source media="(max-width: 1024px)" srcset="image/pets/misha_and_richard_1024.avif" type="image/avif">
+                <source media="(max-width: 1024px)" srcset="image/pets/misha_and_richard_1024.webp" type="image/webp">
                 <source media="(max-width: 1024px)" srcset="image/pets/misha_and_richard_1024.jpg">
+                <source media="(max-width: 1280px)" srcset="image/pets/misha_and_richard_1280.avif" type="image/avif">
+                <source media="(max-width: 1280px)" srcset="image/pets/misha_and_richard_1280.webp" type="image/webp">
                 <source media="(max-width: 1280px)" srcset="image/pets/misha_and_richard_1280.jpg">
                 <img src="image/pets/misha_and_richard.jpg" alt="Фотография пса Ричарда и кота Миши" class="pets__image">
               </picture>
@@ -393,7 +419,11 @@
           <li class="pets__item pets__item_jeck slider__item">
             <figure class="pets__figure">
               <picture>
+                <source media="(max-width: 1024px)" srcset="image/pets/jeck_1024.avif" type="image/avif">
+                <source media="(max-width: 1024px)" srcset="image/pets/jeck_1024.webp" type="image/webp">
                 <source media="(max-width: 1024px)" srcset="image/pets/jeck_1024.jpg">
+                <source media="(max-width: 1280px)" srcset="image/pets/jeck_1280.avif" type="image/avif">
+                <source media="(max-width: 1280px)" srcset="image/pets/jeck_1280.webp" type="image/webp">
                 <source media="(max-width: 1280px)" srcset="image/pets/jeck_1280.jpg">
                 <img src="image/pets/jeck.jpg" alt="Фотография пса Джека" class="pets__image">
               </picture>
@@ -404,7 +434,11 @@
           <li class="pets__item pets__item_jerry slider__item">
             <figure class="pets__figure">
               <picture>
+                <source media="(max-width: 1024px)" srcset="image/pets/jerry_1024.avif" type="image/avif">
+                <source media="(max-width: 1024px)" srcset="image/pets/jerry_1024.webp" type="image/webp">
                 <source media="(max-width: 1024px)" srcset="image/pets/jerry_1024.jpg">
+                <source media="(max-width: 1280px)" srcset="image/pets/jerry_1280.avif" type="image/avif">
+                <source media="(max-width: 1280px)" srcset="image/pets/jerry_1280.webp" type="image/webp">
                 <source media="(max-width: 1280px)" srcset="image/pets/jerry_1280.jpg">
                 <img src="image/pets/jerry.jpg" alt="Фотография пса Джека" class="pets__image">
               </picture>
@@ -415,6 +449,8 @@
           <li class="pets__item pets__item_parrots slider__item">
             <figure class="pets__figure">
               <picture>
+                <source media="(max-width: 1024px)" srcset="image/pets/parrots_1024.avif" type="image/avif">
+                <source media="(max-width: 1024px)" srcset="image/pets/parrots_1024.webp" type="image/webp">
                 <source media="(max-width: 1024px)" srcset="image/pets/parrots_1024.jpg">
                 <img src="image/pets/parrots.jpg" alt="Фотография попугаев Рокки и Сеня" class="pets__image">
               </picture>
