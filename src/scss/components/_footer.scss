@@ -69,7 +69,7 @@
     transform: translateY(-50%);
     width: 18px;
     height: 18px;
-    background: url('../../image/form/phone.svg') center / contain no-repeat;
+    background: url('../image/form/phone.svg') center / contain no-repeat;
   }
   &__email::before {
     position: absolute;
@@ -79,7 +79,7 @@
     transform: translateY(-50%);
     width: 20px;
     height: 16px;
-    background: url('../../image/form/envelope.svg') center / contain no-repeat;
+    background: url('../image/form/envelope.svg') center / contain no-repeat;
   }
   &__info {
     display: flex;
