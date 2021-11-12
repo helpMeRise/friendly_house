@@ -207,7 +207,7 @@ iObserver.observe(document.getElementById('map'));
 
 function loadMap () {
 if (!map.classList.contains("js--loaded")) {
-  map.classList.add("'js--loaded");
+  map.classList.add("js--loaded");
 
   if (typeof ymaps === "undefined") {
     let js = document.createElement('script');
@@ -221,15 +221,3 @@ if (!map.classList.contains("js--loaded")) {
   }
 }
 }
-
-// let ok = false;                    
-// window.addEventListener('scroll', function() {
-//     if (ok === false) {
-//         ok = true;    
-//         setTimeout(() => {                    
-//             let script = document.createElement('script');
-//             script.src = 'https://api-maps.yandex.ru/2.1/?apikey=123&lang=ru_RU';
-//             document.head.appendChild(script);                    
-//         }, 1000)    
-//     }
-// });
