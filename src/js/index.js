@@ -172,9 +172,6 @@ if (window.innerWidth <= 1024) {
 
 let myMap;
 
-// Дождёмся загрузки API и готовности DOM.
-ymaps.ready(init);
-
 function init () {
     myMap = new ymaps.Map('map', {
         center: [55.849206, 37.375674], 
@@ -194,4 +191,45 @@ function init () {
 
 const modalForm = $('#modal__form');
 
+const map = document.querySelector('#map')
+const contact = document.querySelector('.contact');
+const head = document.head;
+let ok = false;
 
+
+var iObserver = new IntersectionObserver(function(entries) {
+  if (entries[0].isIntersecting === true) {
+      loadMap();
+  }
+}, {threshold: [0]}); // от 0 до 1, % видимой части элемента на экране
+
+iObserver.observe(document.getElementById('map'));
+
+function loadMap () {
+if (!map.classList.contains("js--loaded")) {
+  map.classList.add("'js--loaded");
+
+  if (typeof ymaps === "undefined") {
+    let js = document.createElement('script');
+    js.src = "https://api-maps.yandex.ru/2.1/?lang=ru_RU";
+    document.getElementsByTagName('head')[0].appendChild(js);
+    js.onload = function() {
+      ymaps.ready(init);
+    };
+  } else {
+    ymaps.ready(init);
+  }
+}
+}
+
+// let ok = false;                    
+// window.addEventListener('scroll', function() {
+//     if (ok === false) {
+//         ok = true;    
+//         setTimeout(() => {                    
+//             let script = document.createElement('script');
+//             script.src = 'https://api-maps.yandex.ru/2.1/?apikey=123&lang=ru_RU';
+//             document.head.appendChild(script);                    
+//         }, 1000)    
+//     }
+// });
