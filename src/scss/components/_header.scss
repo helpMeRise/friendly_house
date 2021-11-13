@@ -19,6 +19,8 @@
   cursor: pointer;
   margin-right: 150px;
   transition: .2s;
+  border: none;
+  background-color: $white;
 }
 
 .header__menu:hover {

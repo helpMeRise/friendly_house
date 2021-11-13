@@ -9,6 +9,7 @@
     "info socials";
     gap: 90px 120px;
   }
+
   &__map {
     &-wrap {
       grid-area: map;
@@ -128,6 +129,9 @@
     &:active {
       background-color: transparentize($main, 0.7);
     }
+  }
+  &__logo {
+    max-width: 360px;
   }
 }
 

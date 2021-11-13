@@ -75,7 +75,7 @@
 .money__title {
   position: relative;
   margin-bottom: 36px;
-  font-family: HelveticaNeueCyr;
+  font-family: Helvetica Neue Cyr;
   font-style: normal;
   font-weight: 550;
   font-size: 30px;
@@ -110,7 +110,7 @@
 .volunteer-title {
   position: relative;
   margin-bottom: 50px;
-  font-family: HelveticaNeueCyr;
+  font-family: Helvetica Neue Cyr;
   font-style: normal;
   font-weight: 550;
   font-size: 30px;
@@ -153,7 +153,7 @@
 .conservator__title {
   position: relative;
   margin-bottom: 30px;
-  font-family: HelveticaNeueCyr;
+  font-family: Helvetica Neue Cyr;
   font-style: normal;
   font-weight: 550;
   font-size: 30px;
@@ -165,6 +165,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  line-height: 0;
   content: '3';
   top: -50%;
   left: -100px;

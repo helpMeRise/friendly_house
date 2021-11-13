@@ -17,7 +17,8 @@
   display: flex;
   z-index: 2;
   position: relative;
-  width: 180px;
+  width: 280px;
+  padding-left: 100px;
 }
 
 .hero__image {
@@ -51,7 +52,6 @@
 .hero__button {
   width: 180px;
   height: 155px;
-  margin-left: 100px;
 }
 
 .hero__list {
@@ -127,11 +127,11 @@
   .hero__button {
     width: 148px;
     height: 126px;
-    margin-left: 50px;
   }
   
   .hero__list {
     padding-top: 20px;
+    padding-left: 50px;
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -167,6 +167,7 @@
     flex-direction: column;
     max-width: unset;
     padding-top: 60px;
+    padding-left: 0;
   }
   
   .hero__image {
@@ -190,7 +191,6 @@
   .hero__button {
     width: 148px;
     height: 126px;
-    margin-left: 0;
   }
   
   .hero__list {

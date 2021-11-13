@@ -31,7 +31,7 @@ a {
 }
 
 a:hover {
-  text-shadow: 0 0 5px;
+  transform: rotate(-3deg);
 }
 
 ul {
@@ -81,13 +81,6 @@ img {
   line-height: 30px;
   margin-bottom: 20px;
 }
-
-.section__title {
-  font-size: 30px;
-  font-weight: 400;
-  line-height: 40px;
-}
-
 .section__text_bold {
   font-family: "Helvetica Neue Cyr", sans-serif;
   font-weight: 500;
@@ -112,6 +105,7 @@ img {
 
 .button img {
   transition: .2s;
+  filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.25));
 }
 
 .button:hover img,
@@ -123,7 +117,7 @@ img {
 
 .link {
   align-self: flex-end;
-  font-family: HelveticaNeueCyr;
+  font-family: Helvetica Neue Cyr;
   font-weight: 550;
   font-size: 20px;
   line-height: 26px;
